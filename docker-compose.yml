@@ -1,0 +1,50 @@
+version: '3.4'
+
+services:
+  darajaapi:
+    image: ${DOCKER_REGISTRY-}darajaapi
+    build:
+      context: .
+      dockerfile: DarajaAPI/Dockerfile
+    container_name: daraja-api
+    networks:
+      - Daraja-Network
+
+  redis:
+    image: redis
+    container_name: daraja-redis
+    command: ["redis-server", "--protected-mode", "no"]
+    restart: always
+    ports:
+      - "6380:6379"
+    networks:
+      - Daraja-Network
+
+  mysql:
+    image: mysql
+    container_name: daraja-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Admin123
+    ports:
+      - "3307:3306"
+    networks:
+      - Daraja-Network
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    container_name: daraja-adminer
+    restart: always
+    ports:
+      - "8081:8080"
+    networks:
+      - Daraja-Network
+
+networks:
+  Daraja-Network:
+    driver: bridge
+
+volumes:
+  mysql_data:

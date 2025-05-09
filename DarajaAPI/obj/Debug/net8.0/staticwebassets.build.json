@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "WZnSCMfPytp6nziYOhrqK06ZH5Gmo7RbhiUU5Eajeec=",
+  "Source": "DarajaAPI",
+  "BasePath": "_content/DarajaAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

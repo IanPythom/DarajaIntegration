@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DarajaAPI", "DarajaAPI\DarajaAPI.csproj", "{EC88DE3E-89A2-472B-9D30-1A0E9D892C94}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{48A8FA94-D00D-46AB-90B7-10B366FB2192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarajaMVC", "..\DarajaMVC\DarajaMVC.csproj", "{45019E0C-254A-41E3-9DCE-69FB8A34FAA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC88DE3E-89A2-472B-9D30-1A0E9D892C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC88DE3E-89A2-472B-9D30-1A0E9D892C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC88DE3E-89A2-472B-9D30-1A0E9D892C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC88DE3E-89A2-472B-9D30-1A0E9D892C94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A8FA94-D00D-46AB-90B7-10B366FB2192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A8FA94-D00D-46AB-90B7-10B366FB2192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A8FA94-D00D-46AB-90B7-10B366FB2192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A8FA94-D00D-46AB-90B7-10B366FB2192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45019E0C-254A-41E3-9DCE-69FB8A34FAA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45019E0C-254A-41E3-9DCE-69FB8A34FAA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45019E0C-254A-41E3-9DCE-69FB8A34FAA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45019E0C-254A-41E3-9DCE-69FB8A34FAA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B42969D-383D-4269-8DD8-C652FAE74E93}
+	EndGlobalSection
+EndGlobal

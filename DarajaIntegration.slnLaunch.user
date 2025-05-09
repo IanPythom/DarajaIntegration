@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "DarajaAPI\\DarajaAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\DarajaMVC\\DarajaMVC.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[2024-07-18 11:41:43.962 +03:00] [INF] [] [] [] [Starting role seeding] []
+[2024-07-18 11:41:48.089 +03:00] [INF] [] [] [] [Executed DbCommand (169ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2024-07-18 11:41:48.499 +03:00] [INF] [] [] [] [Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2024-07-18 11:41:48.514 +03:00] [INF] [] [] [] [Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2024-07-18 11:41:48.527 +03:00] [INF] [] [] [] [Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2024-07-18 11:41:48.534 +03:00] [INF] [] [] [] [Role seeding completed] []
+[2024-07-18 11:41:48.535 +03:00] [INF] [] [] [] [Starting super admin seeding] []
+[2024-07-18 11:41:48.595 +03:00] [INF] [] [] [] [Executed DbCommand (9ms) [Parameters=[@__defaultUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT NOT EXISTS (
+    SELECT 1
+    FROM `User` AS `u`
+    WHERE (`u`.`Email` = @__defaultUser_Email_0) AND `u`.`Email` IS NOT NULL)] []
+[2024-07-18 11:41:48.604 +03:00] [INF] [] [] [] [Super admin seeding completed] []
+[2024-07-18 11:41:48.749 +03:00] [WRN] [] [] [] [The WebRootPath was not found: C:\Users\Mwesh\source\repos\DarajaIntegration\DarajaAPI\wwwroot. Static files may be unavailable.] []
+[2024-07-18 11:41:48.936 +03:00] [INF] [] [] [] [Now listening on: https://localhost:5003] []
+[2024-07-18 11:41:48.939 +03:00] [INF] [] [] [] [Application started. Press Ctrl+C to shut down.] []
+[2024-07-18 11:41:48.941 +03:00] [INF] [] [] [] [Hosting environment: Development] []
+[2024-07-18 11:41:48.942 +03:00] [INF] [] [] [] [Content root path: C:\Users\Mwesh\source\repos\DarajaIntegration\DarajaAPI] []
+[2024-07-18 11:42:19.181 +03:00] [INF] [] [0HN570LRDF5B5:00000001] [/swagger/index.html] [Request starting HTTP/2 GET https://localhost:5003/swagger/index.html - null null] []
+[2024-07-18 11:42:22.039 +03:00] [INF] [] [0HN570LRDF5B5:00000001] [/swagger/index.html] [Request finished HTTP/2 GET https://localhost:5003/swagger/index.html - 200 null text/html;charset=utf-8 2824.8914ms] []
+[2024-07-18 11:42:23.228 +03:00] [FTL] [] [] [] [Unable to reload configuration.] [System.ArgumentNullException: Value cannot be null. (Parameter 'path2')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.IO.Path.Combine(String path1, String path2)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.CertificatePathWatcher.RemoveWatchUnsynchronized(CertificateConfig certificateConfig)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.CertificatePathWatcher.UpdateWatches(List`1 certificateConfigsToRemove, List`1 certificateConfigsToAdd)
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader.Reload()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.RebindAsync()
+]
+[2024-07-18 11:42:27.665 +03:00] [INF] [] [0HN570LRDF5B6:00000001] [/_framework/aspnetcore-browser-refresh.js] [Request starting HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - null null] []
+[2024-07-18 11:42:27.723 +03:00] [INF] [] [0HN570LRDF5B6:00000001] [/_framework/aspnetcore-browser-refresh.js] [Request finished HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 57.8011ms] []
+[2024-07-18 11:42:33.637 +03:00] [INF] [] [0HN570LRDF5B7:00000001] [/_vs/browserLink] [Request starting HTTP/2 GET https://localhost:5003/_vs/browserLink - null null] []
+[2024-07-18 11:42:37.510 +03:00] [INF] [] [0HN570LRDF5B7:00000001] [/_vs/browserLink] [Request finished HTTP/2 GET https://localhost:5003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 3873.6943ms] []
+[2024-07-18 11:42:38.537 +03:00] [INF] [] [0HN570LRDF5B7:00000003] [/swagger/v1/swagger.json] [Request starting HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - null null] []
+[2024-07-18 11:42:38.895 +03:00] [INF] [] [0HN570LRDF5B7:00000003] [/swagger/v1/swagger.json] [Request finished HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 358.5019ms] []

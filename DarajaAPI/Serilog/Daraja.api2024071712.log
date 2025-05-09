@@ -1,0 +1,64 @@
+[2024-07-17 12:04:39.749 +03:00] [INF] [] [0HN567MPCMCOH:00000001] [/swagger/index.html] [Request starting HTTP/2 GET https://localhost:5003/swagger/index.html - null null] []
+[2024-07-17 12:04:39.841 +03:00] [INF] [] [0HN567MPCMCOH:00000001] [/swagger/index.html] [Request finished HTTP/2 GET https://localhost:5003/swagger/index.html - 200 null text/html;charset=utf-8 93.5107ms] []
+[2024-07-17 12:04:40.481 +03:00] [INF] [] [0HN567MPCMCOH:00000003] [/_vs/browserLink] [Request starting HTTP/2 GET https://localhost:5003/_vs/browserLink - null null] []
+[2024-07-17 12:04:40.484 +03:00] [INF] [] [0HN567MPCMCOH:00000005] [/_framework/aspnetcore-browser-refresh.js] [Request starting HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - null null] []
+[2024-07-17 12:04:40.513 +03:00] [INF] [] [0HN567MPCMCOH:00000005] [/_framework/aspnetcore-browser-refresh.js] [Request finished HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 30.9722ms] []
+[2024-07-17 12:04:40.584 +03:00] [INF] [] [0HN567MPCMCOH:00000003] [/_vs/browserLink] [Request finished HTTP/2 GET https://localhost:5003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 102.7308ms] []
+[2024-07-17 12:04:41.756 +03:00] [INF] [] [0HN567MPCMCOH:00000007] [/swagger/v1/swagger.json] [Request starting HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - null null] []
+[2024-07-17 12:04:41.792 +03:00] [INF] [] [0HN567MPCMCOH:00000007] [/swagger/v1/swagger.json] [Request finished HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.8905ms] []
+[2024-07-17 12:15:06.805 +03:00] [INF] [] [] [] [Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='DarajaDB' AND TABLE_NAME='__EFMigrationsHistory';] []
+[2024-07-17 12:15:06.981 +03:00] [INF] [] [] [] [Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='DarajaDB' AND TABLE_NAME='__EFMigrationsHistory';] []
+[2024-07-17 12:15:07.027 +03:00] [INF] [] [] [] [Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;] []
+[2024-07-17 12:15:07.065 +03:00] [INF] [] [] [] [Applying migration '20240717091429_RoomStatus'.] []
+[2024-07-17 12:15:07.370 +03:00] [INF] [] [] [] [Executed DbCommand (82ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Rooms` ADD `RoomStatus` longtext CHARACTER SET utf8mb4 NOT NULL;] []
+[2024-07-17 12:15:07.394 +03:00] [INF] [] [] [] [Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20240717091429_RoomStatus', '8.0.2');] []
+[2024-07-17 12:25:21.786 +03:00] [INF] [] [] [] [Starting role seeding] []
+[2024-07-17 12:25:27.805 +03:00] [INF] [] [] [] [Executed DbCommand (151ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2024-07-17 12:25:28.169 +03:00] [INF] [] [] [] [Executed DbCommand (19ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2024-07-17 12:25:28.190 +03:00] [INF] [] [] [] [Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2024-07-17 12:25:28.216 +03:00] [INF] [] [] [] [Executed DbCommand (9ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2024-07-17 12:25:28.221 +03:00] [INF] [] [] [] [Role seeding completed] []
+[2024-07-17 12:25:28.223 +03:00] [INF] [] [] [] [Starting super admin seeding] []
+[2024-07-17 12:25:28.299 +03:00] [INF] [] [] [] [Executed DbCommand (4ms) [Parameters=[@__defaultUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT NOT EXISTS (
+    SELECT 1
+    FROM `User` AS `u`
+    WHERE (`u`.`Email` = @__defaultUser_Email_0) AND `u`.`Email` IS NOT NULL)] []
+[2024-07-17 12:25:28.316 +03:00] [INF] [] [] [] [Super admin seeding completed] []
+[2024-07-17 12:25:28.915 +03:00] [WRN] [] [] [] [The WebRootPath was not found: C:\Users\Mwesh\source\repos\DarajaIntegration\DarajaAPI\wwwroot. Static files may be unavailable.] []
+[2024-07-17 12:25:29.872 +03:00] [INF] [] [] [] [Now listening on: https://localhost:5003] []
+[2024-07-17 12:25:29.896 +03:00] [INF] [] [] [] [Application started. Press Ctrl+C to shut down.] []
+[2024-07-17 12:25:29.899 +03:00] [INF] [] [] [] [Hosting environment: Development] []
+[2024-07-17 12:25:29.902 +03:00] [INF] [] [] [] [Content root path: C:\Users\Mwesh\source\repos\DarajaIntegration\DarajaAPI] []
+[2024-07-17 12:25:34.841 +03:00] [INF] [] [0HN5689J9FC3S:00000001] [/swagger/index.html] [Request starting HTTP/2 GET https://localhost:5003/swagger/index.html - null null] []
+[2024-07-17 12:25:35.521 +03:00] [INF] [] [0HN5689J9FC3S:00000001] [/swagger/index.html] [Request finished HTTP/2 GET https://localhost:5003/swagger/index.html - 200 null text/html;charset=utf-8 688.4515ms] []
+[2024-07-17 12:25:35.611 +03:00] [INF] [] [0HN5689J9FC3S:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request starting HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - null null] []
+[2024-07-17 12:25:35.611 +03:00] [INF] [] [0HN5689J9FC3S:00000005] [/_vs/browserLink] [Request starting HTTP/2 GET https://localhost:5003/_vs/browserLink - null null] []
+[2024-07-17 12:25:35.835 +03:00] [INF] [] [0HN5689J9FC3S:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request finished HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 225.6039ms] []
+[2024-07-17 12:25:36.243 +03:00] [INF] [] [0HN5689J9FC3S:00000005] [/_vs/browserLink] [Request finished HTTP/2 GET https://localhost:5003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 634.423ms] []
+[2024-07-17 12:25:36.366 +03:00] [INF] [] [0HN5689J9FC3S:00000007] [/swagger/v1/swagger.json] [Request starting HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - null null] []
+[2024-07-17 12:25:36.771 +03:00] [INF] [] [0HN5689J9FC3S:00000007] [/swagger/v1/swagger.json] [Request finished HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 404.799ms] []

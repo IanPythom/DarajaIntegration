@@ -1,0 +1,6 @@
+@DarajaAPI_HostAddress = http://localhost:5224
+
+GET {{DarajaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
