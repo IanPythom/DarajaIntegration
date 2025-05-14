@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DarajaAPI", "DarajaAPI\Dara
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{48A8FA94-D00D-46AB-90B7-10B366FB2192}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarajaMVC", "..\DarajaMVC\DarajaMVC.csproj", "{45019E0C-254A-41E3-9DCE-69FB8A34FAA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daraja-MVC", "Daraja-MVC\Daraja-MVC.csproj", "{CE07D976-0539-40C3-AD36-B735E46E764E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{48A8FA94-D00D-46AB-90B7-10B366FB2192}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48A8FA94-D00D-46AB-90B7-10B366FB2192}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48A8FA94-D00D-46AB-90B7-10B366FB2192}.Release|Any CPU.Build.0 = Release|Any CPU
-		{45019E0C-254A-41E3-9DCE-69FB8A34FAA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45019E0C-254A-41E3-9DCE-69FB8A34FAA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45019E0C-254A-41E3-9DCE-69FB8A34FAA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45019E0C-254A-41E3-9DCE-69FB8A34FAA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE07D976-0539-40C3-AD36-B735E46E764E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE07D976-0539-40C3-AD36-B735E46E764E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE07D976-0539-40C3-AD36-B735E46E764E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE07D976-0539-40C3-AD36-B735E46E764E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

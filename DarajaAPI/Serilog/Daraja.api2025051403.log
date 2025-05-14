@@ -1,0 +1,211 @@
+[2025-05-14 03:23:49.819 +03:00] [INF] [] [] [] [Starting role seeding] []
+[2025-05-14 03:23:51.197 +03:00] [INF] [] [] [] [Executed DbCommand (37ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-14 03:23:51.311 +03:00] [INF] [] [] [] [Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-14 03:23:51.322 +03:00] [INF] [] [] [] [Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-14 03:23:51.331 +03:00] [INF] [] [] [] [Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-14 03:23:51.335 +03:00] [INF] [] [] [] [Role seeding completed] []
+[2025-05-14 03:23:51.336 +03:00] [INF] [] [] [] [Starting super admin seeding] []
+[2025-05-14 03:23:51.359 +03:00] [INF] [] [] [] [Executed DbCommand (2ms) [Parameters=[@__defaultUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT NOT EXISTS (
+    SELECT 1
+    FROM `User` AS `u`
+    WHERE (`u`.`Email` = @__defaultUser_Email_0) AND `u`.`Email` IS NOT NULL)] []
+[2025-05-14 03:23:51.367 +03:00] [INF] [] [] [] [Super admin seeding completed] []
+[2025-05-14 03:23:51.464 +03:00] [WRN] [] [] [] [The WebRootPath was not found: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI\wwwroot. Static files may be unavailable.] []
+[2025-05-14 03:23:51.537 +03:00] [INF] [] [] [] [Now listening on: https://localhost:5003] []
+[2025-05-14 03:23:51.616 +03:00] [INF] [] [] [] [Application started. Press Ctrl+C to shut down.] []
+[2025-05-14 03:23:51.625 +03:00] [INF] [] [] [] [Hosting environment: Development] []
+[2025-05-14 03:23:51.626 +03:00] [INF] [] [] [] [Content root path: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI] []
+[2025-05-14 03:23:52.751 +03:00] [INF] [] [0HNCIFMDAICP4:00000001] [/swagger/index.html] [Request starting HTTP/2 GET https://localhost:5003/swagger/index.html - null null] []
+[2025-05-14 03:23:53.132 +03:00] [INF] [] [0HNCIFMDAICP4:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request starting HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - null null] []
+[2025-05-14 03:23:53.151 +03:00] [INF] [] [0HNCIFMDAICP4:00000005] [/_vs/browserLink] [Request starting HTTP/2 GET https://localhost:5003/_vs/browserLink - null null] []
+[2025-05-14 03:23:53.173 +03:00] [INF] [] [0HNCIFMDAICP4:00000001] [/swagger/index.html] [Request finished HTTP/2 GET https://localhost:5003/swagger/index.html - 200 null text/html;charset=utf-8 397.4973ms] []
+[2025-05-14 03:23:53.194 +03:00] [INF] [] [0HNCIFMDAICP4:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request finished HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 62.5954ms] []
+[2025-05-14 03:23:53.261 +03:00] [INF] [] [0HNCIFMDAICP4:00000005] [/_vs/browserLink] [Request finished HTTP/2 GET https://localhost:5003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.4338ms] []
+[2025-05-14 03:23:53.318 +03:00] [INF] [] [0HNCIFMDAICP4:00000007] [/swagger/v1/swagger.json] [Request starting HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - null null] []
+[2025-05-14 03:23:53.351 +03:00] [INF] [] [0HNCIFMDAICP4:00000007] [/swagger/v1/swagger.json] [Request finished HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.9725ms] []
+[2025-05-14 03:24:26.446 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Request starting HTTP/2 POST https://localhost:5003/api/v1/Daraja/registerUrls - null 0] []
+[2025-05-14 03:24:26.522 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [CORS policy execution successful.] []
+[2025-05-14 03:24:26.537 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Executing endpoint 'DarajaAPI.Controllers.v1.DarajaController.RegisterMpesaUrlsAsync (DarajaAPI)'] []
+[2025-05-14 03:24:26.552 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Route matched with {action = "RegisterMpesaUrls", controller = "Daraja"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterMpesaUrlsAsync() on controller DarajaAPI.Controllers.v1.DarajaController (DarajaAPI).] []
+[2025-05-14 03:24:26.573 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Start processing HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-14 03:24:26.579 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Sending HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-14 03:24:27.417 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Received HTTP response headers after 834.4445ms - 200] []
+[2025-05-14 03:24:27.420 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [End processing HTTP request after 848.7979ms - 200] []
+[2025-05-14 03:24:27.502 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Start processing HTTP request POST https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl] []
+[2025-05-14 03:24:27.504 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Sending HTTP request POST https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl] []
+[2025-05-14 03:24:29.281 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Received HTTP response headers after 1774.6287ms - 200] []
+[2025-05-14 03:24:29.284 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [End processing HTTP request after 1782.2728ms - 200] []
+[2025-05-14 03:24:29.292 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Executing OkObjectResult, writing value of type 'System.String'.] []
+[2025-05-14 03:24:29.302 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Executed action DarajaAPI.Controllers.v1.DarajaController.RegisterMpesaUrlsAsync (DarajaAPI) in 2743.1068ms] []
+[2025-05-14 03:24:29.305 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Executed endpoint 'DarajaAPI.Controllers.v1.DarajaController.RegisterMpesaUrlsAsync (DarajaAPI)'] []
+[2025-05-14 03:24:29.309 +03:00] [INF] [] [0HNCIFMDAICP4:00000009] [/api/v1/Daraja/registerUrls] [Request finished HTTP/2 POST https://localhost:5003/api/v1/Daraja/registerUrls - 200 null text/plain; charset=utf-8 2863.5335ms] []
+[2025-05-14 03:26:14.414 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Request starting HTTP/2 POST https://localhost:5003/api/v1/Daraja/simulate-c2b-payment - application/json 79] []
+[2025-05-14 03:26:14.429 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [CORS policy execution successful.] []
+[2025-05-14 03:26:14.431 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Executing endpoint 'DarajaAPI.Controllers.v1.DarajaController.SimulateC2BPayment (DarajaAPI)'] []
+[2025-05-14 03:26:14.443 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Route matched with {action = "SimulateC2BPayment", controller = "Daraja"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SimulateC2BPayment(DarajaAPI.Models.Dto.C2BRequestDto) on controller DarajaAPI.Controllers.v1.DarajaController (DarajaAPI).] []
+[2025-05-14 03:26:14.478 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Start processing HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-14 03:26:14.482 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Sending HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-14 03:26:15.090 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Received HTTP response headers after 606.6776ms - 200] []
+[2025-05-14 03:26:15.094 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [End processing HTTP request after 615.9956ms - 200] []
+[2025-05-14 03:26:15.119 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Start processing HTTP request POST https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate] []
+[2025-05-14 03:26:15.122 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Sending HTTP request POST https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate] []
+[2025-05-14 03:26:16.586 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Received HTTP response headers after 1461.1058ms - 200] []
+[2025-05-14 03:26:16.599 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [End processing HTTP request after 1480.1386ms - 200] []
+[2025-05-14 03:26:16.618 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Sending request to Daraja: {"ShortCode":"600988","CommandID":"CustomerPayBillOnline","Amount":100,"Msisdn":"254708374149","BillRefNumber":"TEST"}] []
+[2025-05-14 03:26:16.640 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Executing ObjectResult, writing value of type 'System.String'.] []
+[2025-05-14 03:26:16.645 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Executed action DarajaAPI.Controllers.v1.DarajaController.SimulateC2BPayment (DarajaAPI) in 2198.7001ms] []
+[2025-05-14 03:26:16.648 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Executed endpoint 'DarajaAPI.Controllers.v1.DarajaController.SimulateC2BPayment (DarajaAPI)'] []
+[2025-05-14 03:26:16.650 +03:00] [INF] [] [0HNCIFMDAICP4:0000000B] [/api/v1/Daraja/simulate-c2b-payment] [Request finished HTTP/2 POST https://localhost:5003/api/v1/Daraja/simulate-c2b-payment - 200 null text/plain; charset=utf-8 2236.5165ms] []
+[2025-05-14 03:34:54.467 +03:00] [INF] [] [] [] [Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='DarajaDB' AND TABLE_NAME='__EFMigrationsHistory';] []
+[2025-05-14 03:34:54.571 +03:00] [INF] [] [] [] [Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='DarajaDB' AND TABLE_NAME='__EFMigrationsHistory';] []
+[2025-05-14 03:34:54.591 +03:00] [INF] [] [] [] [Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;] []
+[2025-05-14 03:34:54.604 +03:00] [INF] [] [] [] [Applying migration '20250514003444_FixMpesaC2B'.] []
+[2025-05-14 03:34:54.731 +03:00] [INF] [] [] [] [Executed DbCommand (80ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `MpesaC2Bs` MODIFY COLUMN `MiddleName` longtext CHARACTER SET utf8mb4 NULL;] []
+[2025-05-14 03:34:54.790 +03:00] [INF] [] [] [] [Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `MpesaC2Bs` MODIFY COLUMN `LastName` longtext CHARACTER SET utf8mb4 NULL;] []
+[2025-05-14 03:34:54.848 +03:00] [INF] [] [] [] [Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `MpesaC2Bs` MODIFY COLUMN `FirstName` longtext CHARACTER SET utf8mb4 NULL;] []
+[2025-05-14 03:34:54.863 +03:00] [INF] [] [] [] [Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250514003444_FixMpesaC2B', '8.0.2');] []
+[2025-05-14 03:35:05.903 +03:00] [INF] [] [] [] [Starting role seeding] []
+[2025-05-14 03:35:07.140 +03:00] [INF] [] [] [] [Executed DbCommand (39ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-14 03:35:07.257 +03:00] [INF] [] [] [] [Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-14 03:35:07.265 +03:00] [INF] [] [] [] [Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-14 03:35:07.271 +03:00] [INF] [] [] [] [Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-14 03:35:07.274 +03:00] [INF] [] [] [] [Role seeding completed] []
+[2025-05-14 03:35:07.274 +03:00] [INF] [] [] [] [Starting super admin seeding] []
+[2025-05-14 03:35:07.297 +03:00] [INF] [] [] [] [Executed DbCommand (2ms) [Parameters=[@__defaultUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT NOT EXISTS (
+    SELECT 1
+    FROM `User` AS `u`
+    WHERE (`u`.`Email` = @__defaultUser_Email_0) AND `u`.`Email` IS NOT NULL)] []
+[2025-05-14 03:35:07.304 +03:00] [INF] [] [] [] [Super admin seeding completed] []
+[2025-05-14 03:35:07.396 +03:00] [WRN] [] [] [] [The WebRootPath was not found: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI\wwwroot. Static files may be unavailable.] []
+[2025-05-14 03:35:07.460 +03:00] [INF] [] [] [] [Now listening on: https://localhost:5003] []
+[2025-05-14 03:35:07.530 +03:00] [INF] [] [] [] [Application started. Press Ctrl+C to shut down.] []
+[2025-05-14 03:35:07.538 +03:00] [INF] [] [] [] [Hosting environment: Development] []
+[2025-05-14 03:35:07.540 +03:00] [INF] [] [] [] [Content root path: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI] []
+[2025-05-14 03:35:08.709 +03:00] [INF] [] [0HNCIFSMP8IMU:00000001] [/swagger/index.html] [Request starting HTTP/2 GET https://localhost:5003/swagger/index.html - null null] []
+[2025-05-14 03:35:09.226 +03:00] [INF] [] [0HNCIFSMP8IMU:00000001] [/swagger/index.html] [Request finished HTTP/2 GET https://localhost:5003/swagger/index.html - 200 null text/html;charset=utf-8 526.2721ms] []
+[2025-05-14 03:35:09.396 +03:00] [INF] [] [0HNCIFSMP8IMU:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request starting HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - null null] []
+[2025-05-14 03:35:09.416 +03:00] [INF] [] [0HNCIFSMP8IMU:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request finished HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 20.4423ms] []
+[2025-05-14 03:35:09.453 +03:00] [INF] [] [0HNCIFSMP8IMU:00000005] [/_vs/browserLink] [Request starting HTTP/2 GET https://localhost:5003/_vs/browserLink - null null] []
+[2025-05-14 03:35:09.676 +03:00] [INF] [] [0HNCIFSMP8IMU:00000005] [/_vs/browserLink] [Request finished HTTP/2 GET https://localhost:5003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 222.6699ms] []
+[2025-05-14 03:35:10.329 +03:00] [INF] [] [0HNCIFSMP8IMU:00000007] [/swagger/v1/swagger.json] [Request starting HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - null null] []
+[2025-05-14 03:35:10.371 +03:00] [INF] [] [0HNCIFSMP8IMU:00000007] [/swagger/v1/swagger.json] [Request finished HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 41.9238ms] []
+[2025-05-14 03:36:15.946 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Request starting HTTP/2 POST https://localhost:5003/api/v1/Daraja/simulate-c2b-payment - application/json 79] []
+[2025-05-14 03:36:16.007 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [CORS policy execution successful.] []
+[2025-05-14 03:36:16.029 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Executing endpoint 'DarajaAPI.Controllers.v1.DarajaController.SimulateC2BPayment (DarajaAPI)'] []
+[2025-05-14 03:36:16.048 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Route matched with {action = "SimulateC2BPayment", controller = "Daraja"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SimulateC2BPayment(DarajaAPI.Models.Dto.C2BRequestDto) on controller DarajaAPI.Controllers.v1.DarajaController (DarajaAPI).] []
+[2025-05-14 03:36:16.099 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Start processing HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-14 03:36:16.103 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Sending HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-14 03:36:16.941 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Received HTTP response headers after 834.1434ms - 200] []
+[2025-05-14 03:36:16.945 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [End processing HTTP request after 849.2126ms - 200] []
+[2025-05-14 03:36:17.047 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Start processing HTTP request POST https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate] []
+[2025-05-14 03:36:17.050 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Sending HTTP request POST https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate] []
+[2025-05-14 03:36:18.690 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Received HTTP response headers after 1639.5013ms - 500] []
+[2025-05-14 03:36:18.694 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [End processing HTTP request after 1647.6391ms - 500] []
+[2025-05-14 03:36:18.697 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Sending request to Daraja: {"ShortCode":"600988","CommandID":"CustomerPayBillOnline","Amount":100,"Msisdn":"254708374149","BillRefNumber":"TEST"}] []
+[2025-05-14 03:36:18.705 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Executing ObjectResult, writing value of type 'System.String'.] []
+[2025-05-14 03:36:18.715 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Executed action DarajaAPI.Controllers.v1.DarajaController.SimulateC2BPayment (DarajaAPI) in 2659.7581ms] []
+[2025-05-14 03:36:18.718 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Executed endpoint 'DarajaAPI.Controllers.v1.DarajaController.SimulateC2BPayment (DarajaAPI)'] []
+[2025-05-14 03:36:18.721 +03:00] [INF] [] [0HNCIFSMP8IMU:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Request finished HTTP/2 POST https://localhost:5003/api/v1/Daraja/simulate-c2b-payment - 500 null text/plain; charset=utf-8 2775.0393ms] []
+[2025-05-14 03:48:15.817 +03:00] [INF] [] [] [] [Starting role seeding] []
+[2025-05-14 03:48:16.974 +03:00] [INF] [] [] [] [Executed DbCommand (37ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-14 03:48:17.086 +03:00] [INF] [] [] [] [Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-14 03:48:17.094 +03:00] [INF] [] [] [] [Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-14 03:48:17.100 +03:00] [INF] [] [] [] [Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-14 03:48:17.103 +03:00] [INF] [] [] [] [Role seeding completed] []
+[2025-05-14 03:48:17.104 +03:00] [INF] [] [] [] [Starting super admin seeding] []
+[2025-05-14 03:48:17.135 +03:00] [INF] [] [] [] [Executed DbCommand (2ms) [Parameters=[@__defaultUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT NOT EXISTS (
+    SELECT 1
+    FROM `User` AS `u`
+    WHERE (`u`.`Email` = @__defaultUser_Email_0) AND `u`.`Email` IS NOT NULL)] []
+[2025-05-14 03:48:17.141 +03:00] [INF] [] [] [] [Super admin seeding completed] []
+[2025-05-14 03:48:17.238 +03:00] [WRN] [] [] [] [The WebRootPath was not found: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI\wwwroot. Static files may be unavailable.] []
+[2025-05-14 03:48:17.299 +03:00] [INF] [] [] [] [Now listening on: https://localhost:5003] []
+[2025-05-14 03:48:17.386 +03:00] [INF] [] [] [] [Application started. Press Ctrl+C to shut down.] []
+[2025-05-14 03:48:17.388 +03:00] [INF] [] [] [] [Hosting environment: Development] []
+[2025-05-14 03:48:17.391 +03:00] [INF] [] [] [] [Content root path: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI] []
+[2025-05-14 03:48:18.052 +03:00] [INF] [] [0HNCIG4218ICK:00000001] [/swagger/index.html] [Request starting HTTP/2 GET https://localhost:5003/swagger/index.html - null null] []
+[2025-05-14 03:48:18.276 +03:00] [INF] [] [0HNCIG4218ICK:00000001] [/swagger/index.html] [Request finished HTTP/2 GET https://localhost:5003/swagger/index.html - 200 null text/html;charset=utf-8 237.3058ms] []
+[2025-05-14 03:48:18.285 +03:00] [INF] [] [0HNCIG4218ICK:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request starting HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - null null] []
+[2025-05-14 03:48:18.285 +03:00] [INF] [] [0HNCIG4218ICK:00000005] [/_vs/browserLink] [Request starting HTTP/2 GET https://localhost:5003/_vs/browserLink - null null] []
+[2025-05-14 03:48:18.306 +03:00] [INF] [] [0HNCIG4218ICK:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request finished HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 21.6444ms] []
+[2025-05-14 03:48:18.357 +03:00] [INF] [] [0HNCIG4218ICK:00000005] [/_vs/browserLink] [Request finished HTTP/2 GET https://localhost:5003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.4482ms] []
+[2025-05-14 03:48:18.406 +03:00] [INF] [] [0HNCIG4218ICK:00000007] [/swagger/v1/swagger.json] [Request starting HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - null null] []
+[2025-05-14 03:48:18.428 +03:00] [INF] [] [0HNCIG4218ICK:00000007] [/swagger/v1/swagger.json] [Request finished HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.5921ms] []
+[2025-05-14 03:49:29.888 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Request starting HTTP/2 POST https://localhost:5003/api/v1/Daraja/simulate-c2b-payment - application/json 81] []
+[2025-05-14 03:49:29.959 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [CORS policy execution successful.] []
+[2025-05-14 03:49:29.974 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Executing endpoint 'DarajaAPI.Controllers.v1.DarajaController.SimulateC2BPayment (DarajaAPI)'] []
+[2025-05-14 03:49:29.992 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Route matched with {action = "SimulateC2BPayment", controller = "Daraja"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SimulateC2BPayment(DarajaAPI.Models.Dto.C2BRequestDto) on controller DarajaAPI.Controllers.v1.DarajaController (DarajaAPI).] []
+[2025-05-14 03:49:30.044 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Start processing HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-14 03:49:30.048 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Sending HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-14 03:49:30.856 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Received HTTP response headers after 804.8723ms - 200] []
+[2025-05-14 03:49:30.860 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [End processing HTTP request after 818.0956ms - 200] []
+[2025-05-14 03:49:30.990 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Start processing HTTP request POST https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate] []
+[2025-05-14 03:49:30.992 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Sending HTTP request POST https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate] []
+[2025-05-14 03:49:31.737 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Received HTTP response headers after 742.9464ms - 200] []
+[2025-05-14 03:49:31.740 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [End processing HTTP request after 749.9884ms - 200] []
+[2025-05-14 03:49:31.743 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Request to Daraja: {"ShortCode":"600988","CommandID":"CustomerPayBillOnline","Amount":"100","Msisdn":"254708374149","BillRefNumber":"TEST"}] []
+[2025-05-14 03:49:31.755 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Executing ObjectResult, writing value of type 'System.String'.] []
+[2025-05-14 03:49:31.763 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Executed action DarajaAPI.Controllers.v1.DarajaController.SimulateC2BPayment (DarajaAPI) in 1763.7446ms] []
+[2025-05-14 03:49:31.766 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Executed endpoint 'DarajaAPI.Controllers.v1.DarajaController.SimulateC2BPayment (DarajaAPI)'] []
+[2025-05-14 03:49:31.772 +03:00] [INF] [] [0HNCIG4218ICK:00000009] [/api/v1/Daraja/simulate-c2b-payment] [Request finished HTTP/2 POST https://localhost:5003/api/v1/Daraja/simulate-c2b-payment - 200 null text/plain; charset=utf-8 1884.5745ms] []

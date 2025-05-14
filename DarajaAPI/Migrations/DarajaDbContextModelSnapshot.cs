@@ -222,6 +222,7 @@ namespace DarajaAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("BillRefNumber")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("BusinessShortCode")
@@ -235,21 +236,25 @@ namespace DarajaAPI.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("InvoiceNumber")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("LastName")
                         .HasColumnType("longtext");
 
                     b.Property<string>("MSISDN")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("MiddleName")
                         .HasColumnType("longtext");
 
                     b.Property<string>("OrgAccountBalance")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("ThirdPartyTransID")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("TransAmount")
@@ -265,6 +270,7 @@ namespace DarajaAPI.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("TransactionType")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");

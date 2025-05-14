@@ -1,4 +1,4 @@
-name: dockercompose5081081199938398777
+name: dockercompose6272152085354723921
 services:
   adminer:
     container_name: daraja-adminer
@@ -13,7 +13,7 @@ services:
     restart: always
   darajaapi:
     build:
-      context: C:\Users\Mwesh\source\repos\DarajaIntegration
+      context: C:\Users\ianga\source\repos\DarajaIntegration
       dockerfile: DarajaAPI/Dockerfile
     container_name: daraja-api
     environment:
@@ -32,13 +32,13 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: C:\Users\Mwesh\AppData\Roaming/Microsoft/UserSecrets
+        source: C:\Users\ianga\AppData\Roaming/Microsoft/UserSecrets
         target: /home/app/.microsoft/usersecrets
         read_only: true
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\Mwesh\AppData\Roaming/ASP.NET/Https
+        source: C:\Users\ianga\AppData\Roaming/ASP.NET/Https
         target: /home/app/.aspnet/https
         read_only: true
         bind:
@@ -78,8 +78,8 @@ services:
     restart: always
 networks:
   Daraja-Network:
-    name: dockercompose5081081199938398777_Daraja-Network
+    name: dockercompose6272152085354723921_Daraja-Network
     driver: bridge
 volumes:
   mysql_data:
-    name: dockercompose5081081199938398777_mysql_data
+    name: dockercompose6272152085354723921_mysql_data

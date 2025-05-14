@@ -1,4 +1,4 @@
-name: dockercompose5081081199938398777
+name: dockercompose6272152085354723921
 services:
   adminer:
     container_name: daraja-adminer
@@ -13,19 +13,22 @@ services:
     restart: always
   darajaapi:
     build:
-      context: C:\Users\Mwesh\source\repos\DarajaIntegration
+      context: C:\Users\ianga\source\repos\DarajaIntegration
       dockerfile: DarajaAPI/Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
+        LAUNCHING_FROM_VS: "true"
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: DarajaAPI
       target: base
     container_name: daraja-api
     entrypoint:
-      - tail
-      - -f
-      - /dev/null
+      - dotnet
+      - --roll-forward
+      - Major
+      - /VSTools/DistrolessHelper/DistrolessHelper.dll
+      - --wait
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: "8080"
@@ -36,7 +39,7 @@ services:
     image: darajaapi:dev
     labels:
       com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net8.0/DarajaAPI.dll"'
-      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
     networks:
@@ -51,34 +54,34 @@ services:
     tty: true
     volumes:
       - type: bind
-        source: C:\Users\Mwesh\AppData\Roaming/Microsoft/UserSecrets
+        source: C:\Users\ianga\AppData\Roaming\Microsoft\UserSecrets
         target: /home/app/.microsoft/usersecrets
         read_only: true
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\Mwesh\AppData\Roaming/ASP.NET/Https
+        source: C:\Users\ianga\AppData\Roaming\ASP.NET\Https
         target: /home/app/.aspnet/https
         read_only: true
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\Mwesh\source\repos\DarajaIntegration\DarajaAPI
+        source: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI
         target: /app
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\Mwesh\source\repos\DarajaIntegration
+        source: C:\Users\ianga\source\repos\DarajaIntegration
         target: /src
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\Mwesh\vsdbg\vs2017u5
+        source: C:\Users\ianga\vsdbg\vs2017u5
         target: /remote_debugger
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\Mwesh\.nuget\packages\
+        source: C:\Users\ianga\.nuget\packages
         target: /.nuget/packages
         read_only: true
         bind:
@@ -90,26 +93,20 @@ services:
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\Mwesh\AppData\Roaming/ASP.NET/Https
+        source: C:\Users\ianga\AppData\Roaming\ASP.NET\Https
         target: /root/.aspnet/https
         read_only: true
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\Mwesh\AppData\Roaming/Microsoft/UserSecrets
+        source: C:\Users\ianga\AppData\Roaming\Microsoft\UserSecrets
         target: /root/.microsoft/usersecrets
         read_only: true
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
-        target: /TokenService.Proxy
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
-        target: /HotReloadProxy
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0
+        target: /VSTools
         read_only: true
         bind:
           create_host_path: true
@@ -154,8 +151,8 @@ services:
     restart: always
 networks:
   Daraja-Network:
-    name: dockercompose5081081199938398777_Daraja-Network
+    name: dockercompose6272152085354723921_Daraja-Network
     driver: bridge
 volumes:
   mysql_data:
-    name: dockercompose5081081199938398777_mysql_data
+    name: dockercompose6272152085354723921_mysql_data

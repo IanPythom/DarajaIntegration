@@ -39,6 +39,12 @@ builder.Services.AddCors(options =>
                           .AllowAnyHeader());
 });
 
+// Add this in Program.cs after builder.Services.AddHttpClient();
+builder.Services.AddHttpClient("mpesa", client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["Daraja:MpesaBaseUrl"]);
+});
+
 builder.Services.Configure<DarajaSetting>(builder.Configuration.GetSection("Daraja"));
 builder.Services.AddScoped<DarajaAuthService>();
 

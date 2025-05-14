@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DarajaAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c37c3caf89fe6be0e700676614363c64aab08488")]
 [assembly: System.Reflection.AssemblyProductAttribute("DarajaAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DarajaAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

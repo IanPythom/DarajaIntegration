@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\DarajaIntegration\\DarajaAPI\\DarajaAPI.csproj": {}
+    "C:\\Users\\ianga\\source\\repos\\DarajaIntegration\\DarajaAPI\\DarajaAPI.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\DarajaIntegration\\DarajaAPI\\DarajaAPI.csproj": {
+    "C:\\Users\\ianga\\source\\repos\\DarajaIntegration\\DarajaAPI\\DarajaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\DarajaIntegration\\DarajaAPI\\DarajaAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ianga\\source\\repos\\DarajaIntegration\\DarajaAPI\\DarajaAPI.csproj",
         "projectName": "DarajaAPI",
-        "projectPath": "D:\\Projects\\DarajaIntegration\\DarajaAPI\\DarajaAPI.csproj",
+        "projectPath": "C:\\Users\\ianga\\source\\repos\\DarajaIntegration\\DarajaAPI\\DarajaAPI.csproj",
         "packagesPath": "C:\\Users\\ianga\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\DarajaIntegration\\DarajaAPI\\obj\\",
+        "outputPath": "C:\\Users\\ianga\\source\\repos\\DarajaIntegration\\DarajaAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
