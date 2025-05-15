@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Daraja-MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c37c3caf89fe6be0e700676614363c64aab08488")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f4d0c691c82bb5cc6fcf86c58d264fc973c0038")]
 [assembly: System.Reflection.AssemblyProductAttribute("Daraja-MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Daraja-MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,75 @@
+Mpesa Notes:
+============
+Payment processing, callback handling, and registration are now in dedicated services in the appliction/business layer.
+
+Daraja Testing Credentials:
+===========================
+Initiator name: testapi
+Initiator password: Safaricom123!!
+PartyA: 600991
+PartyB: 600000
+Phone number: 254708374149
+Business short code: 174379
+PassKey: bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919
+
+For testing use:
+================
+// Test phone number
+var testPhone = "254708374149";
+// Test account format
+var testAccount = $"2173219{DateTime.Now:yyyyMMddHHmmss}";
+To encrypt password: Use Convert.ToBase64String(Encoding.UTF8.GetBytes("Safaricom123!!"))
+
+EXTRA NOTES
+===========
+Now that we are on the Development Environment, it will by default read the data from the appsettings.Development.Json
+To attach these data to a MailSettings class by adding builder.Services.Configure<MailSettings>
+
+1.	Mandatory Features:
+o	Transaction status query API integration
+o	IP whitelisting validation
+o	Duplicate transaction handling
+o	Payment reconciliation system
+o	Webhook retry mechanism
+2.	Production Readiness:
+o	Implement Azure Key Vault for credentials
+o	Add circuit breaker pattern for Daraja API calls
+o	Set up Prometheus/Grafana monitoring
+o	Implement audit logging
+3.	Testing:
+o	Add integration tests using Daraja sandbox
+o	Implement mock Daraja service for unit tests
+o	Create Postman test collection
+
+2.	CQRS Pattern:
+csharp
+Copy
+Download
+public class ProcessMpesaPaymentCommand : IRequest<PaymentResult>
+{
+    // Command properties
+}
+
+public class PaymentResultHandler : IRequestHandler<ProcessMpesaPaymentCommand, PaymentResult>
+{
+    // Handle command
+}
+8. Critical Security Updates
+1.	Data Protection:
+csharp
+Copy
+Download
+services.AddDataProtection()
+    .PersistKeysToAzureBlobStorage(connectionString, containerName, blobName)
+    .ProtectKeysWithAzureKeyVault(keyClient, keyIdentifier);
+2.	Sensitive Data Handling:
+csharp
+Copy
+Download
+[NotMapped]
+public string AccessToken 
+{
+    get => _dataProtector.Unprotect(EncryptedToken);
+    set => EncryptedToken = _dataProtector.Protect(value);
+}
+9. Performance Optimizations

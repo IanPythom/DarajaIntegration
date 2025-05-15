@@ -1,9 +1,13 @@
 using Asp.Versioning;
 using Daraja.DbContext;
+using DarajaAPI.Filters;
 using DarajaAPI.Models;
 using DarajaAPI.Models.Domain;
 using DarajaAPI.Models.Dto;
+using DarajaAPI.Repositories;
+using DarajaAPI.RepositoryInterface;
 using DarajaAPI.Services;
+using DarajaAPI.Services.Background;
 using DarajaAPI.Services.Daraja;
 using DarajaAPI.Swagger;
 using MailServiceAPI.Services.OAuth2;
@@ -46,17 +50,26 @@ builder.Services.AddHttpClient("mpesa", client =>
 });
 
 builder.Services.Configure<DarajaSetting>(builder.Configuration.GetSection("Daraja"));
-builder.Services.AddScoped<DarajaAuthService>();
+builder.Services.Configure<DarajaConfig>(builder.Configuration.GetSection("Daraja"));
 
-// REPOSITORY INJECTION
-builder.Services.AddScoped<ITokenRepos, TokenRepos>();
+builder.Services.AddScoped<IDarajaAuthService, DarajaAuthService>();
+builder.Services.AddScoped<ILipaNaService, LipaNaService>();
+builder.Services.AddScoped<IDarajaPaymentService, DarajaPaymentService>();
+builder.Services.AddScoped<IDarajaCallbackService, DarajaCallbackService>();
+builder.Services.AddScoped<IDarajaRegistrationService, DarajaRegistrationService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IMpesaTransactionRepository, MpesaTransactionRepository>();
+builder.Services.AddHostedService<PaymentReconciliationService>();
+
+// Whitelist filter for IP address
+builder.Services.AddScoped<MpesaIpWhitelistFilter>();
 
 // register the IMailService and MailService
 builder.Services.AddTransient<DarajaAPI.Services.Mail.IMailService, MailServiceAPI.Services.Mail.MailService>();
 
-// Now that we are on the Development Environment, it will by default read the data from the appsettings.Development.Json
-// Then we will have to attach these data to a MailSettings class by adding builder.Services.Configure<MailSettings>
-// This is much much better than to simply hardcode all the details within your application code.
+// REPOSITORY INJECTION
+builder.Services.AddScoped<ITokenRepos, TokenRepos>();
+
 builder.Services.Configure<MailSetting>(builder.Configuration.GetSection("MailSettings"));
 
 // SWAGGER CONFIGURATIONS

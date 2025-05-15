@@ -42,7 +42,10 @@ namespace DarajaAPI.Models.Domain
         public string? FirstName { get; set; }
         public string? MiddleName { get; set; }
         public string? LastName { get; set; }
-
+        public bool IsVerified { get; set; }
+        public DateTime? VerificationDate { get; set; }
+        public string VerificationResult { get; set; }
+        public int RetryCount { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
     }
 }

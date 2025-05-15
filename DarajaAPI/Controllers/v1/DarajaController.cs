@@ -150,7 +150,7 @@ namespace DarajaAPI.Controllers.v1
             };
 
             var content = new StringContent(JsonConvert.SerializeObject(requestBody), Encoding.UTF8, "application/json");
-            var response = await client.PostAsync($"{_settings.MpesaBaseUrl}mpesa/c2b/v1/simulate", content);
+            var response = await client.PostAsync($"{_settings.BaseUrl}mpesa/c2b/v1/simulate", content);
 
             _logger.Information($"Request to Daraja: {JsonConvert.SerializeObject(requestBody)}");
             return StatusCode((int)response.StatusCode, await response.Content.ReadAsStringAsync());

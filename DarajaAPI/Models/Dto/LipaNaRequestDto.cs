@@ -1,8 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace DarajaAPI.Models.Dto
+﻿namespace DarajaAPI.Models.Dto
 {
-    public class PaymentRequestDto
+    public class LipaNaRequestDto
     {
         public string PhoneNumber { get; set; }
         public decimal Amount { get; set; }
