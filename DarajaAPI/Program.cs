@@ -3,7 +3,7 @@ using Daraja.DbContext;
 using DarajaAPI.Filters;
 using DarajaAPI.Models;
 using DarajaAPI.Models.Domain;
-using DarajaAPI.Models.Dto;
+using DarajaAPI.Models.Dto.Config;
 using DarajaAPI.Repositories;
 using DarajaAPI.RepositoryInterface;
 using DarajaAPI.Services;
@@ -49,11 +49,15 @@ builder.Services.AddHttpClient("mpesa", client =>
     client.BaseAddress = new Uri(builder.Configuration["Daraja:MpesaBaseUrl"]);
 });
 
-builder.Services.Configure<DarajaSetting>(builder.Configuration.GetSection("Daraja"));
+// Bind DarajaConfig to the "Daraja" section of appsettings.json
 builder.Services.Configure<DarajaConfig>(builder.Configuration.GetSection("Daraja"));
+
+// Register DarajaConfig as a service (scoped or singleton)
+builder.Services.AddScoped<DarajaConfig>(sp => sp.GetRequiredService<IOptions<DarajaConfig>>().Value);
 
 builder.Services.AddScoped<IDarajaAuthService, DarajaAuthService>();
 builder.Services.AddScoped<ILipaNaService, LipaNaService>();
+builder.Services.AddScoped<IDarajaAuthService, DarajaAuthService>();
 builder.Services.AddScoped<IDarajaPaymentService, DarajaPaymentService>();
 builder.Services.AddScoped<IDarajaCallbackService, DarajaCallbackService>();
 builder.Services.AddScoped<IDarajaRegistrationService, DarajaRegistrationService>();

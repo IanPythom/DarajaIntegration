@@ -11,11 +11,7 @@ namespace DarajaAPI.Services.Daraja
         private readonly IDarajaAuthService _authService;
         private readonly ILogger<DarajaRegistrationService> _logger;
 
-        public DarajaRegistrationService(
-            IHttpClientFactory clientFactory,
-            IOptions<DarajaSetting> settings,
-            IDarajaAuthService authService,
-            ILogger<DarajaRegistrationService> logger)
+        public DarajaRegistrationService(IHttpClientFactory clientFactory, IOptions<DarajaSetting> settings, IDarajaAuthService authService, ILogger<DarajaRegistrationService> logger)
         {
             _clientFactory = clientFactory;
             _settings = settings.Value;
@@ -33,8 +29,8 @@ namespace DarajaAPI.Services.Daraja
             {
                 ValidationURL = _settings.ValidationURL,
                 ConfirmationURL = _settings.ConfirmationURL,
-                ResponseType = _settings.ResponseType,
-                ShortCode = _settings.ShortCode
+                ResponseType = "Completed",
+                ShortCode = _settings.ShortCode // 2211
             };
 
             try

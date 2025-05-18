@@ -5,8 +5,8 @@ namespace DarajaAPI.Models.Dto
     public class LipaNaSimulationRequest
     {
         [Required]
-        [StringLength(21, MinimumLength = 21,
-            ErrorMessage = "Account number must be 21 characters")]
+        [StringLength(20, MinimumLength = 20,
+            ErrorMessage = "Account number must be 20 characters")]
         public string AccountNumber { get; set; }
 
         [Required]

@@ -1,5 +1,6 @@
 ﻿using DarajaAPI.Models.Domain;
 using DarajaAPI.Models.Dto;
+using DarajaAPI.Models.Dto.Config;
 using DarajaAPI.Records;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Linq;
@@ -35,22 +36,21 @@ namespace DarajaAPI.Services.Daraja
 
             // Use test credentials from Daraja
             var timestamp = DateTime.Now.ToString("yyyyMMddHHmmss");
-            var password = Convert.ToBase64String(
-                Encoding.UTF8.GetBytes($"174379bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919{timestamp}"));
+            var password = Convert.ToBase64String(Encoding.UTF8.GetBytes($"{_config.Credentials.ShortCode}{_config.Credentials.PassKey}{timestamp}"));
 
             var requestBody = new
             {
-                BusinessShortCode = "174379", // From test credentials
+                BusinessShortCode = "600998", // From your test credentials
                 Password = password,
                 Timestamp = timestamp,
-                TransactionType = "CustomerBuyGoodsOnline",
+                TransactionType = "CustomerPayBillOnline", // Recommended for C2B
                 Amount = amount,
-                PartyA = "254708374149", // Test phone number
-                PartyB = "174379", // Business short code
-                PhoneNumber = "254708374149", // Test phone number
+                PartyA = phoneNumber, // Use 254708374149 for sandbox testing
+                PartyB = "600998", // Should match BusinessShortCode
+                PhoneNumber = phoneNumber, // Use 254708374149
                 AccountReference = referenceNumber,
                 TransactionDesc = "Payment to IAN MWENDA GATUMU",
-                CallBackURL = _config.Urls.Confirmation // Ensure this is set in config
+                CallBackURL = _config.Urls.Confirmation // Must be HTTPS
             };
 
             try
@@ -97,8 +97,7 @@ namespace DarajaAPI.Services.Daraja
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             var timestamp = DateTime.Now.ToString("yyyyMMddHHmmss");
-            var password = Convert.ToBase64String(
-                Encoding.UTF8.GetBytes($"{settings.ShortCode}{settings.PassKey}{timestamp}"));
+            var password = Convert.ToBase64String(Encoding.UTF8.GetBytes($"{settings.ShortCode}{settings.PassKey}{timestamp}"));
 
             var baseUrl = GetBaseUrl();
 
@@ -145,19 +144,6 @@ namespace DarajaAPI.Services.Daraja
             return _config.Environment.Equals("Production", StringComparison.OrdinalIgnoreCase)
                 ? _config.BaseUrls.Production
                 : _config.BaseUrls.Sandbox;
-        }
-
-        private string GenerateLipaNaPassword()
-        {
-            var rawPass = $"{_config.Credentials.ShortCode}{_config.Credentials.PassKey}{DateTime.Now:yyyyMMddHHmmss}";
-            return Convert.ToBase64String(Encoding.UTF8.GetBytes(rawPass));
-        }
-
-        public bool ValidateLipaNaAccount(string accountNumber)
-        {
-            // Validate account number matches your business pattern
-            return accountNumber.StartsWith(_config.Credentials.AccountNumberPrefix)
-                   && accountNumber.Length == 16; // 2173219 + timestamp
         }
     }
 }

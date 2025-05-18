@@ -11,14 +11,14 @@ namespace DarajaAPI.Services.Daraja
     {
         private readonly DarajaDbContext _context;
         private readonly ILogger<DarajaCallbackService> _logger;
-        private readonly IAccountService _accountService; // Added
-        private readonly IMpesaTransactionRepository _transactionRepository; // Added
+        private readonly IAccountService _accountService;
+        private readonly IMpesaTransactionRepository _transactionRepository;
 
         public DarajaCallbackService(
             DarajaDbContext context,
             ILogger<DarajaCallbackService> logger,
-            IAccountService accountService, // Added
-            IMpesaTransactionRepository transactionRepository) // Added
+            IAccountService accountService,
+            IMpesaTransactionRepository transactionRepository)
         {
             _context = context;
             _logger = logger;
@@ -49,6 +49,7 @@ namespace DarajaAPI.Services.Daraja
             }
         }
 
+        // Minimum amount(≥10 KES) and Account format(prefix 2173219)
         public async Task<ValidationResult> HandleValidationAsync(MpesaValidationRequestDto request)
         {
             // 1. Check transaction uniqueness
@@ -72,7 +73,7 @@ namespace DarajaAPI.Services.Daraja
                 return ValidationResult.AmountBelowMinimum;
             }
 
-            // 4. Validate account reference
+            // 4. Validate account reference and account format(prefix 2173219)
             var isValidAccount = await _accountService.ValidateAccountAsync(request.BillRefNumber);
             if (!isValidAccount)
             {

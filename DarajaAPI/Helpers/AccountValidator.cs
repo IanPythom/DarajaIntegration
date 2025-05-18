@@ -6,8 +6,8 @@ namespace DarajaAPI.Helpers
     {
         public static (bool IsValid, string Error) ValidateAccountNumber(string accountNumber)
         {
-            const string prefix = "2173219";
-            const int requiredLength = 21; // 7 (prefix) + 14 (timestamp)
+            const string prefix = "174379"; // Changed from 2173219
+            const int requiredLength = 20;  // 6 (prefix) + 14 (timestamp) e.g 17437920231015124530" (20 characters)
 
             if (!accountNumber.StartsWith(prefix))
                 return (false, $"Account must start with {prefix}");
@@ -15,7 +15,8 @@ namespace DarajaAPI.Helpers
             if (accountNumber.Length != requiredLength)
                 return (false, $"Invalid length. Expected {requiredLength} characters");
 
-            if (!DateTime.TryParseExact(accountNumber[7..],
+            // Validate timestamp (now starts at index 6)
+            if (!DateTime.TryParseExact(accountNumber[6..], // Changed from [7..]
                 "yyyyMMddHHmmss",
                 CultureInfo.InvariantCulture,
                 DateTimeStyles.None,

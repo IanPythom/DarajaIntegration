@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using DarajaAPI.Models.Domain;
-using DarajaAPI.Models.Dto;
 
 namespace Daraja.DbContext
 {

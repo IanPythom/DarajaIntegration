@@ -17,6 +17,9 @@ namespace DarajaAPI.Models.Domain
         public int ?NextOfKinPhoneNumber { get; set; }
         public string ?NextOfKinRelation { get; set; }
         public DepositStatus ?Deposit { get; set; }
+        public string AccountNumber { get; set; } // e.g., "2173219-USER-123" for subscription tracking
+        public DateTime SubscriptionExpiry { get; set; } // Time the subscription expires
+        public int Tokens { get; set; } // Number of tokens the user has for scanning/purchasing
     }
 
     public enum DepositStatus

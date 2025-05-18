@@ -1,14 +1,13 @@
-﻿using DarajaAPI.Models.Domain;
-using DarajaAPI.Models.Dto;
+﻿using DarajaAPI.Models.Dto;
 
 namespace DarajaAPI.Services.Daraja
 {
     public class LipaNaService : ILipaNaService
     {
-        public async Task<LipanaMpesaResult> ProcessPayment(LipaNaSimulationRequest request)
+        public async Task<LipanaMpesaResultDto> ProcessPayment(LipaNaSimulationRequest request)
         {
             // Implement actual Lipa Na M-Pesa logic here
-            return new LipanaMpesaResult
+            return new LipanaMpesaResultDto
             {
                 TransactionCode = "ABC123XYZ",
                 Amount = request.Amount

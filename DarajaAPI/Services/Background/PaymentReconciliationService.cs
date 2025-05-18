@@ -37,6 +37,7 @@ namespace DarajaAPI.Services.Background
                         {
                             transaction.IsVerified = true;
                             transaction.VerificationDate = DateTime.UtcNow;
+
                             transaction.VerificationResult = result.TransactionStatus;
                             await transactionRepo.UpdateAsync(transaction);
                         }

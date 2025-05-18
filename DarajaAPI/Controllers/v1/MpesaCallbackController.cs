@@ -25,7 +25,16 @@ namespace DarajaAPI.Controllers.v1
             _logger = logger;
         }
 
-        [HttpPost("confirmation")]
+        [HttpPost]
+        [Route("confirmation")]
+        /// <summary>
+        /// Handles payment confirmation callbacks from M-Pesa
+        /// </summary>
+        /// <remarks>
+        /// PRODUCTION ENDPOINT. 
+        /// Called automatically by Safaricom's servers after successful payments. 
+        /// Stores transaction details and marks payments as verified.
+        /// </remarks>
         public async Task<IActionResult> Confirmation([FromBody] MpesaC2B transaction)
         {
             var result = await _callbackService.HandleConfirmationAsync(transaction);
@@ -38,7 +47,16 @@ namespace DarajaAPI.Controllers.v1
             };
         }
 
-        [HttpPost("validation")]
+        [HttpPost]
+        [Route("validation")]
+        /// <summary>
+        /// Validates incoming payment requests
+        /// </summary>
+        /// <remarks>
+        /// PRODUCTION ENDPOINT. 
+        /// Called by Safaricom before processing payments. 
+        /// Verifies account validity and payment amounts.
+        /// </remarks>
         public async Task<IActionResult> Validation([FromBody] MpesaValidationRequestDto request)
         {
             var validationResult = await _callbackService.HandleValidationAsync(request);

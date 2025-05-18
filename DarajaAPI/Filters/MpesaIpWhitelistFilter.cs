@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
-using DarajaAPI.Models.Domain;
 using Microsoft.Extensions.Options;
+using DarajaAPI.Models.Dto.Config;
 
 namespace DarajaAPI.Filters
 {

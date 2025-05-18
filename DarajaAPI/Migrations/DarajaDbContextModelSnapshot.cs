@@ -27,6 +27,10 @@ namespace DarajaAPI.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("AccountNumber")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("longtext");
@@ -94,6 +98,12 @@ namespace DarajaAPI.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("longtext");
 
+                    b.Property<DateTime>("SubscriptionExpiry")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("Tokens")
+                        .HasColumnType("int");
+
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("tinyint(1)");
 
@@ -125,6 +135,14 @@ namespace DarajaAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<string>("BaseUrl")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("C2BSimulateUrl")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("ConfirmationURL")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -137,7 +155,15 @@ namespace DarajaAPI.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("MpesaBaseUrl")
+                    b.Property<string>("InitiatorName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("InitiatorPassword")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("PassKey")
                         .IsRequired()
                         .HasColumnType("longtext");
 
@@ -150,6 +176,10 @@ namespace DarajaAPI.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("ShortCode")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("TransactionStatusEndpoint")
                         .IsRequired()
                         .HasColumnType("longtext");
 
@@ -239,6 +269,9 @@ namespace DarajaAPI.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<bool>("IsVerified")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<string>("LastName")
                         .HasColumnType("longtext");
 
@@ -252,6 +285,9 @@ namespace DarajaAPI.Migrations
                     b.Property<string>("OrgAccountBalance")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int>("RetryCount")
+                        .HasColumnType("int");
 
                     b.Property<string>("ThirdPartyTransID")
                         .IsRequired()
@@ -270,6 +306,13 @@ namespace DarajaAPI.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("TransactionType")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("VerificationDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("VerificationResult")
                         .IsRequired()
                         .HasColumnType("longtext");
 

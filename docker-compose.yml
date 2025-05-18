@@ -1,5 +1,3 @@
-version: '3.4'
-
 services:
   darajaapi:
     image: ${DOCKER_REGISTRY-}darajaapi

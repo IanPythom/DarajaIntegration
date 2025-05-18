@@ -94,25 +94,73 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "DarajaAPI.Controllers.v1.DarajaController",
+    "ContainingType": "DarajaAPI.Controllers.v1.MpesaCallbackController",
     "Method": "Confirmation",
-    "RelativePath": "api/v1/Daraja/confirmation",
+    "RelativePath": "api/v1/mpesa/callback/confirmation",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "System.Object",
+        "Name": "transaction",
+        "Type": "DarajaAPI.Models.Domain.MpesaC2B",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "DarajaAPI.Controllers.v1.DarajaController",
-    "Method": "RegisterMpesaUrlsAsync",
-    "RelativePath": "api/v1/Daraja/registerUrls",
+    "ContainingType": "DarajaAPI.Controllers.v1.MpesaCallbackController",
+    "Method": "Validation",
+    "RelativePath": "api/v1/mpesa/callback/validation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DarajaAPI.Models.Dto.MpesaValidationRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DarajaAPI.Controllers.v1.MpesaPaymentController",
+    "Method": "InitiatePayment",
+    "RelativePath": "api/v1/mpesa/payments/initiate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DarajaAPI.Models.Dto.PaymentRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DarajaAPI.Controllers.v1.MpesaPaymentController",
+    "Method": "SimulateLipaNaPayment",
+    "RelativePath": "api/v1/mpesa/payments/simulate-lipa-na",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DarajaAPI.Models.Dto.LipaNaSimulationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DarajaAPI.Controllers.v1.MpesaRegistrationController",
+    "Method": "RegisterUrls",
+    "RelativePath": "api/v1/mpesa/registration/urls",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -131,53 +179,7 @@
           "text/json"
         ],
         "StatusCode": 400
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 401
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
       }
     ]
-  },
-  {
-    "ContainingType": "DarajaAPI.Controllers.v1.DarajaController",
-    "Method": "SimulateC2BPayment",
-    "RelativePath": "api/v1/Daraja/simulate-c2b-payment",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "DarajaAPI.Models.Dto.C2BRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "DarajaAPI.Controllers.v1.DarajaController",
-    "Method": "Validation",
-    "RelativePath": "api/v1/Daraja/validation",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "DarajaAPI.Models.Domain.MpesaC2B",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   }
 ]

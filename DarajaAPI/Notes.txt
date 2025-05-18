@@ -1,75 +1,91 @@
-Mpesa Notes:
-============
-Payment processing, callback handling, and registration are now in dedicated services in the appliction/business layer.
+﻿WORKFLOW NOTES: Mpesa C2B
+=========================
+
+Step 1: Register Callback URLs
+==============================
+Trigger URL Registration: Call the registration endpoint (via Postman/Swagger). - POST /api/register-urls
+This uses DarajaRegistrationService to register your validation/confirmation URLs with Safaricom.
+
+Step 2: Verify Registration
+===========================
+Check logs/Safaricom response for success:
+"ResponseCode": "0" = Success
+
+Step 3: Simulate C2B Payment
+============================
+Use the C2BSimulate endpoint to send a test transaction (Postman): - POST /api/simulate-c2b
+Body:
+json
+{
+  "accountNumber": "17437920231015124530",
+  "amount": 10,
+  "phoneNumber": "254708374149",
+  "transactionReference": "string"
+}
+Check Validation:
+The DarajaCallbackService.HandleValidationAsync() validates: Account format (2173219...), Minimum amount (≥10 KES), Transaction uniqueness and Confirms Transaction
+If valid, Safaricom sends a confirmation to ConfirmationURL.
+The transaction is saved to MpesaC2B table via HandleConfirmationAsync().
+
+Step 4: Verify Transaction Status
+=================================
+Check Database: Query the MpesaC2B table to see if the transaction is recorded.
+Manual Verification: Use the transaction ID to verify via verify-transaction: - POST /api/verify-transaction
+Body:
+json
+{
+  "TransactionID": "ABC123XYZ"
+}
+Auto-Reconciliation:
+The PaymentReconciliationService runs every 15 minutes to verify pending transactions.
+
+Step 5: Test Security
+=====================
+IP Whitelisting
+The MpesaIpWhitelistFilter blocks non-Safaricom IPs. Test with: Valid IP (e.g., 196.201.214.200) → Allowed and Invalid IP → Returns 403 Forbidden
+Authentication: Ensure the access_token is generated via DarajaAuthService.GetAccessTokenAsync().
+
+Code Flow Explanation
+=====================
+1. Transaction Initiation
+Endpoint: POST /api/process-payment
+Service: DarajaPaymentService.ProcessPaymentAsync() - use test credentials here to make payment.
+Generates STK push request with encrypted password.
+Uses BusinessShortCode: 222111 (your Paybill).
+
+2. Validation & Confirmation
+Validation:
+DarajaCallbackService.HandleValidationAsync() checks: Account format, Minimum amount and others
+Confirmation:
+HandleConfirmationAsync() saves valid transactions to DB.
+
+3. Background Reconciliation
+Service: PaymentReconciliationService
+Checks unverified transactions every 15 minutes.
+Updates status via VerifyTransactionAsync().
+
+4. Security
+IP Whitelisting: MpesaIpWhitelistFilter enforces Safaricom IPs.
+Token Auth: DarajaAuthService handles OAuth for API calls.
+
+Key Files & Configurations
+appsettings.json
+Paybill: 2211
+Account Prefix: 2173219
+Callback URLs: Ngrok endpoints
+Test Credentials: Sandbox keys
+MpesaC2B.cs: Model for storing transaction details.
+AccountValidator.cs
+Ensures account numbers match 2173219 + timestamp.
 
 Daraja Testing Credentials:
 ===========================
 Initiator name: testapi
 Initiator password: Safaricom123!!
-PartyA: 600991
+PartyA: 600988
 PartyB: 600000
 Phone number: 254708374149
 Business short code: 174379
 PassKey: bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919
 
-For testing use:
-================
-// Test phone number
-var testPhone = "254708374149";
-// Test account format
-var testAccount = $"2173219{DateTime.Now:yyyyMMddHHmmss}";
-To encrypt password: Use Convert.ToBase64String(Encoding.UTF8.GetBytes("Safaricom123!!"))
-
-EXTRA NOTES
-===========
-Now that we are on the Development Environment, it will by default read the data from the appsettings.Development.Json
-To attach these data to a MailSettings class by adding builder.Services.Configure<MailSettings>
-
-1.	Mandatory Features:
-o	Transaction status query API integration
-o	IP whitelisting validation
-o	Duplicate transaction handling
-o	Payment reconciliation system
-o	Webhook retry mechanism
-2.	Production Readiness:
-o	Implement Azure Key Vault for credentials
-o	Add circuit breaker pattern for Daraja API calls
-o	Set up Prometheus/Grafana monitoring
-o	Implement audit logging
-3.	Testing:
-o	Add integration tests using Daraja sandbox
-o	Implement mock Daraja service for unit tests
-o	Create Postman test collection
-
-2.	CQRS Pattern:
-csharp
-Copy
-Download
-public class ProcessMpesaPaymentCommand : IRequest<PaymentResult>
-{
-    // Command properties
-}
-
-public class PaymentResultHandler : IRequestHandler<ProcessMpesaPaymentCommand, PaymentResult>
-{
-    // Handle command
-}
-8. Critical Security Updates
-1.	Data Protection:
-csharp
-Copy
-Download
-services.AddDataProtection()
-    .PersistKeysToAzureBlobStorage(connectionString, containerName, blobName)
-    .ProtectKeysWithAzureKeyVault(keyClient, keyIdentifier);
-2.	Sensitive Data Handling:
-csharp
-Copy
-Download
-[NotMapped]
-public string AccessToken 
-{
-    get => _dataProtector.Unprotect(EncryptedToken);
-    set => EncryptedToken = _dataProtector.Protect(value);
-}
-9. Performance Optimizations
+LipaNaService.cs: This is for STK Push simulations. Keep it but ensure it uses the correct Paybill 2211.

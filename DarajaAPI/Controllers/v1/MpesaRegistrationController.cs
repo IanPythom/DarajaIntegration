@@ -19,6 +19,13 @@ namespace DarajaAPI.Controllers.v1
         [HttpPost("urls")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        /// <summary>
+        /// Registers validation and confirmation URLs with Safaricom's Daraja API
+        /// </summary>
+        /// <remarks>
+        /// Critical production endpoint. Should be called once during deployment.
+        /// Requires valid Daraja credentials. Subsequent calls will fail if URLs are already registered.
+        /// </remarks>
         public async Task<IActionResult> RegisterUrls()
         {
             var result = await _registrationService.RegisterUrlsAsync();

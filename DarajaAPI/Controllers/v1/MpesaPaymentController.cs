@@ -25,15 +25,22 @@ namespace DarajaAPI.Controllers.v1
             _logger = logger;
         }
 
-        [HttpPost("initiate")]
+        [HttpPost]
+        [Route("initiate")]
+        /// <summary>
+        /// Sends STK Push to user’s phone.
+        /// </summary>
+        /// <remarks>
+        /// PRODUCTION ENDPOINT. 
+        /// Triggers real payments to Paybill 2211. 
+        /// Requires valid consumer credentials and a registered callback URL.
+        /// </remarks>
+        /// <param name="request">Payment details including phone number and amount</param>
         public async Task<IActionResult> InitiatePayment([FromBody] PaymentRequestDto request)
         {
             try
             {
-                var result = await _paymentService.ProcessPaymentAsync(
-                    request.PhoneNumber,
-                    (decimal)request.Amount,
-                    request.ReferenceNumber);
+                var result = await _paymentService.ProcessPaymentAsync(request.PhoneNumber, (decimal)request.Amount, request.ReferenceNumber);
 
                 return Ok(result);
             }
@@ -44,7 +51,17 @@ namespace DarajaAPI.Controllers.v1
             }
         }
 
-        [HttpPost("simulate-lipa-na")]
+        [HttpPost]
+        [Route("simulate-lipa-na")]
+        /// <summary>
+        /// Simulates a [TESTING ONLY] Lipa Na M-Pesa payment to validate acc no. format no callbacks or saved data
+        /// </summary>
+        /// <remarks>
+        /// FOR DEVELOPMENT/TESTING ONLY. 
+        /// Does not process real payments. 
+        /// Validates account format and returns mock transaction data.
+        /// </remarks>
+        /// <param name="request">Test payment simulation request</param>
         public async Task<IActionResult> SimulateLipaNaPayment([FromBody] LipaNaSimulationRequest request)
         {
             var validationResult = AccountValidator.ValidateAccountNumber(request.AccountNumber);
@@ -55,7 +72,7 @@ namespace DarajaAPI.Controllers.v1
                 {
                     Code = "LNMP001",
                     Message = "Invalid account number format",
-                    ExpectedFormat = "2173219[yyyyMMddHHmmss]"
+                    ExpectedFormat = "174379[yyyyMMddHHmmss]"
                 });
             }
 
