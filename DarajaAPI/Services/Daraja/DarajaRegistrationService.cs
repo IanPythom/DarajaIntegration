@@ -30,7 +30,7 @@ namespace DarajaAPI.Services.Daraja
                 ValidationURL = _settings.ValidationURL,
                 ConfirmationURL = _settings.ConfirmationURL,
                 ResponseType = "Completed",
-                ShortCode = _settings.ShortCode // 2211
+                ShortCode = _settings.ShortCode
             };
 
             try

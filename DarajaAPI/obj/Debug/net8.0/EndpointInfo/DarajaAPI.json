@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "MasterPG",
-    "description": "This api will be used by madonna staff for viewing/validation of student and payment viewing/processing opertaions",
+    "title": "DarajaAPI",
+    "description": "Originally for madonna but now just a payment service using daraja c2b",
     "contact": {
       "name": "Ian",
       "email": "iangatumu@gmail.com"

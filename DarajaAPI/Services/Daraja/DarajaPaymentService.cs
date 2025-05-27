@@ -40,13 +40,13 @@ namespace DarajaAPI.Services.Daraja
 
             var requestBody = new
             {
-                BusinessShortCode = "600998", // From your test credentials
+                BusinessShortCode = "174379", // From your test credentials
                 Password = password,
                 Timestamp = timestamp,
                 TransactionType = "CustomerPayBillOnline", // Recommended for C2B
                 Amount = amount,
                 PartyA = phoneNumber, // Use 254708374149 for sandbox testing
-                PartyB = "600998", // Should match BusinessShortCode
+                PartyB = "174379", // Should match BusinessShortCode
                 PhoneNumber = phoneNumber, // Use 254708374149
                 AccountReference = referenceNumber,
                 TransactionDesc = "Payment to IAN MWENDA GATUMU",
@@ -93,6 +93,7 @@ namespace DarajaAPI.Services.Daraja
         {
             var settings = _settings;
             var token = await _authService.GetAccessTokenAsync();
+            Console.WriteLine(token);
             var client = _clientFactory.CreateClient("mpesa");
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
@@ -123,7 +124,11 @@ namespace DarajaAPI.Services.Daraja
 
         private string GenerateSecurityCredential(string initiatorPassword)
         {
-            var cert = new X509Certificate2(Path.Combine("certs", "prod_cert.cer"));
+            var certPath = _config.Environment.Equals("Production", StringComparison.OrdinalIgnoreCase)
+                ? _config.Certificates.Production
+                : _config.Certificates.Sandbox;
+
+            var cert = new X509Certificate2(Path.Combine("certs", certPath));
             using var rsa = cert.GetRSAPublicKey();
             return Convert.ToBase64String(rsa.Encrypt(Encoding.UTF8.GetBytes(initiatorPassword), RSAEncryptionPadding.Pkcs1));
         }

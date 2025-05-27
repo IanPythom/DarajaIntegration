@@ -23,9 +23,9 @@ namespace DarajaAPI.Swagger
         {
             var info = new OpenApiInfo()
             {
-                Title = "MasterPG",
+                Title = "DarajaAPI",
                 Version = description.ApiVersion.ToString(),
-                Description = "This api will be used by madonna staff for viewing/validation of student and payment viewing/processing opertaions",
+                Description = "Originally for madonna but now just a payment service using daraja c2b",
                 Contact = new OpenApiContact { Name = "Ian", Email = "iangatumu@gmail.com" },
                 License = new OpenApiLicense { Name = "License - (MIT)" }
             };
