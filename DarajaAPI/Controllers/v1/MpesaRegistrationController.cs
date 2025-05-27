@@ -1,4 +1,5 @@
 ﻿using Asp.Versioning;
+using DarajaAPI.Models.Dto;
 using DarajaAPI.Services.Daraja;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,7 +18,7 @@ namespace DarajaAPI.Controllers.v1
         }
 
         [HttpPost("urls")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DarajaResponseDto))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         /// <summary>
         /// Registers validation and confirmation URLs with Safaricom's Daraja API

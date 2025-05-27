@@ -310,7 +310,24 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DarajaResponseDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DarajaResponseDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DarajaResponseDto"
+                }
+              }
+            }
           },
           "400": {
             "description": "Bad Request",
@@ -338,6 +355,48 @@
   },
   "components": {
     "schemas": {
+      "DarajaResponseDto": {
+        "type": "object",
+        "properties": {
+          "responseCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "responseDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "originatorConversationID": {
+            "type": "string",
+            "nullable": true
+          },
+          "conversationID": {
+            "type": "string",
+            "nullable": true
+          },
+          "errorCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "errorMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "merchantRequestID": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkoutRequestID": {
+            "type": "string",
+            "nullable": true
+          },
+          "rawResponse": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "LipaNaSimulationRequest": {
         "required": [
           "accountNumber",

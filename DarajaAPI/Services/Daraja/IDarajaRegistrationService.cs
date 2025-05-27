@@ -1,7 +1,9 @@
-﻿namespace DarajaAPI.Services.Daraja
+﻿using DarajaAPI.Models.Dto;
+
+namespace DarajaAPI.Services.Daraja
 {
     public interface IDarajaRegistrationService
     {
-        Task<string> RegisterUrlsAsync();
+        Task<DarajaResponseDto> RegisterUrlsAsync();
     }
 }

@@ -46,6 +46,8 @@ C:\Users\Mwesh\source\repos\DarajaIntegration\bin\Debug\DarajaAPI.pdb
 C:\Users\Mwesh\source\repos\DarajaIntegration\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\Mwesh\source\repos\DarajaIntegration\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\Mwesh\source\repos\DarajaIntegration\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\DarajaAPI.dll
+C:\Users\ianga\source\repos\DarajaIntegration\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\DarajaAPI.deps.json
 C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\DarajaAPI.runtimeconfig.json
 C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\appsettings.Development.json
@@ -53,7 +55,6 @@ C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\appsettings.json
 C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\appsettings.Production.json
 C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\DarajaAPI.staticwebassets.endpoints.json
 C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\DarajaAPI.exe
-C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\DarajaAPI.dll
 C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\Microsoft.Extensions.Identity.Core.dll
 C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -94,5 +95,4 @@ C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\Serilog.Extensions.Loggi
 C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\ianga\source\repos\DarajaIntegration\bin\Debug\DarajaAPI.pdb
 C:\Users\ianga\source\repos\DarajaIntegration\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
-C:\Users\ianga\source\repos\DarajaIntegration\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\ianga\source\repos\DarajaIntegration\obj\Debug\docker-c.35A3FFBA.Up2Date

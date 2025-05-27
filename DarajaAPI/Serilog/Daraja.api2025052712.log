@@ -1,0 +1,400 @@
+[2025-05-27 12:00:13.728 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Request starting HTTP/1.1 POST https://69a8-197-232-41-24.ngrok-free.app/api/v1/mpesa/registration/urls - null 0] []
+[2025-05-27 12:00:13.749 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [CORS policy execution successful.] []
+[2025-05-27 12:00:13.753 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Executing endpoint 'DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI)'] []
+[2025-05-27 12:00:13.756 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Route matched with {action = "RegisterUrls", controller = "MpesaRegistration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUrls() on controller DarajaAPI.Controllers.v1.MpesaRegistrationController (DarajaAPI).] []
+[2025-05-27 12:00:17.440 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Start processing HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-27 12:00:17.444 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Sending HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-27 12:00:18.331 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Received HTTP response headers after 883.8822ms - 200] []
+[2025-05-27 12:00:18.336 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [End processing HTTP request after 895.6853ms - 200] []
+[2025-05-27 12:00:30.644 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Start processing HTTP request POST https://sandbox.safaricom.co.ke/] []
+[2025-05-27 12:00:30.647 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Sending HTTP request POST https://sandbox.safaricom.co.ke/] []
+[2025-05-27 12:00:30.829 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Received HTTP response headers after 180.0954ms - 404] []
+[2025-05-27 12:00:30.832 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [End processing HTTP request after 188.3285ms - 404] []
+[2025-05-27 12:02:01.264 +03:00] [ERR] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [URL registration failed: ] []
+[2025-05-27 12:02:01.304 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Executing OkObjectResult, writing value of type 'null'.] []
+[2025-05-27 12:02:01.307 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Executed action DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI) in 107545.9509ms] []
+[2025-05-27 12:02:01.312 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Executed endpoint 'DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI)'] []
+[2025-05-27 12:02:01.316 +03:00] [INF] [] [0HNCSVGVFMCRD:00000001] [/api/v1/mpesa/registration/urls] [Request finished HTTP/1.1 POST https://69a8-197-232-41-24.ngrok-free.app/api/v1/mpesa/registration/urls - 204 null null 107588.9175ms] []
+[2025-05-27 12:02:06.203 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Request starting HTTP/1.1 POST https://69a8-197-232-41-24.ngrok-free.app/api/v1/mpesa/registration/urls - null 0] []
+[2025-05-27 12:02:06.210 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [CORS policy execution successful.] []
+[2025-05-27 12:02:06.215 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Executing endpoint 'DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI)'] []
+[2025-05-27 12:02:06.219 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Route matched with {action = "RegisterUrls", controller = "MpesaRegistration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUrls() on controller DarajaAPI.Controllers.v1.MpesaRegistrationController (DarajaAPI).] []
+[2025-05-27 12:02:18.440 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Start processing HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-27 12:02:18.445 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Sending HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-27 12:02:19.153 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Received HTTP response headers after 703.4112ms - 200] []
+[2025-05-27 12:02:19.157 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [End processing HTTP request after 717.0945ms - 200] []
+[2025-05-27 12:06:54.324 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Start processing HTTP request POST https://sandbox.safaricom.co.ke/] []
+[2025-05-27 12:06:54.327 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Sending HTTP request POST https://sandbox.safaricom.co.ke/] []
+[2025-05-27 12:06:55.049 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Received HTTP response headers after 718.9008ms - 404] []
+[2025-05-27 12:06:55.052 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [End processing HTTP request after 728.0726ms - 404] []
+[2025-05-27 12:06:55.056 +03:00] [ERR] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [URL registration failed: ] []
+[2025-05-27 12:06:55.058 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Executing OkObjectResult, writing value of type 'null'.] []
+[2025-05-27 12:06:55.061 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Executed action DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI) in 288837.4056ms] []
+[2025-05-27 12:06:55.065 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Executed endpoint 'DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI)'] []
+[2025-05-27 12:06:55.069 +03:00] [INF] [] [0HNCSVGVFMCRD:00000002] [/api/v1/mpesa/registration/urls] [Request finished HTTP/1.1 POST https://69a8-197-232-41-24.ngrok-free.app/api/v1/mpesa/registration/urls - 204 null null 288865.4564ms] []
+[2025-05-27 12:06:55.436 +03:00] [INF] [] [0HNCSVGVFMCRD:00000003] [/swagger/index.html] [Request starting HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/swagger/index.html - null null] []
+[2025-05-27 12:06:55.461 +03:00] [INF] [] [0HNCSVGVFMCRD:00000003] [/swagger/index.html] [Request finished HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/swagger/index.html - 200 null text/html;charset=utf-8 25.0434ms] []
+[2025-05-27 12:06:55.790 +03:00] [INF] [] [0HNCSVGVFMCRD:00000004] [/_framework/aspnetcore-browser-refresh.js] [Request starting HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/_framework/aspnetcore-browser-refresh.js - null null] []
+[2025-05-27 12:06:55.805 +03:00] [INF] [] [0HNCSVGVFMCRD:00000004] [/_framework/aspnetcore-browser-refresh.js] [Request finished HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 14.9642ms] []
+[2025-05-27 12:06:55.877 +03:00] [INF] [] [0HNCSVGVFMCRE:00000001] [/_vs/browserLink] [Request starting HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/_vs/browserLink - null null] []
+[2025-05-27 12:06:55.914 +03:00] [INF] [] [0HNCSVGVFMCRE:00000001] [/_vs/browserLink] [Request finished HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.7112ms] []
+[2025-05-27 12:06:57.078 +03:00] [INF] [] [0HNCSVGVFMCRE:00000002] [/swagger/v1/swagger.json] [Request starting HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/swagger/v1/swagger.json - null null] []
+[2025-05-27 12:06:57.109 +03:00] [INF] [] [0HNCSVGVFMCRE:00000002] [/swagger/v1/swagger.json] [Request finished HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 30.7126ms] []
+[2025-05-27 12:07:03.390 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Request starting HTTP/1.1 POST https://69a8-197-232-41-24.ngrok-free.app/api/v1/mpesa/registration/urls - null 0] []
+[2025-05-27 12:07:03.397 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [CORS policy execution successful.] []
+[2025-05-27 12:07:03.399 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Executing endpoint 'DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI)'] []
+[2025-05-27 12:07:03.409 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Route matched with {action = "RegisterUrls", controller = "MpesaRegistration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUrls() on controller DarajaAPI.Controllers.v1.MpesaRegistrationController (DarajaAPI).] []
+[2025-05-27 12:07:12.914 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Start processing HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-27 12:07:12.919 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Sending HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-27 12:07:13.713 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Received HTTP response headers after 788.3584ms - 200] []
+[2025-05-27 12:07:13.716 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [End processing HTTP request after 801.9029ms - 200] []
+[2025-05-27 12:08:09.498 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Start processing HTTP request POST https://sandbox.safaricom.co.ke/] []
+[2025-05-27 12:08:09.501 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Sending HTTP request POST https://sandbox.safaricom.co.ke/] []
+[2025-05-27 12:08:09.948 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Received HTTP response headers after 441.7649ms - 404] []
+[2025-05-27 12:08:09.951 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [End processing HTTP request after 453.7505ms - 404] []
+[2025-05-27 12:16:05.012 +03:00] [ERR] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [URL registration failed: ] []
+[2025-05-27 12:16:05.049 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Executing OkObjectResult, writing value of type 'null'.] []
+[2025-05-27 12:16:05.063 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Executed action DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI) in 541645.3613ms] []
+[2025-05-27 12:16:05.075 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Executed endpoint 'DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI)'] []
+[2025-05-27 12:16:05.087 +03:00] [INF] [] [0HNCSVGVFMCRF:00000001] [/api/v1/mpesa/registration/urls] [Request starting HTTP/1.1 POST https://69a8-197-232-41-24.ngrok-free.app/api/v1/mpesa/registration/urls - null 0] []
+[2025-05-27 12:16:05.087 +03:00] [INF] [] [0HNCSVGVFMCRE:00000003] [/api/v1/mpesa/registration/urls] [Request finished HTTP/1.1 POST https://69a8-197-232-41-24.ngrok-free.app/api/v1/mpesa/registration/urls - 499 null null 541697.6127ms] []
+[2025-05-27 12:16:05.096 +03:00] [INF] [] [0HNCSVGVFMCRF:00000001] [/api/v1/mpesa/registration/urls] [CORS policy execution successful.] []
+[2025-05-27 12:16:05.105 +03:00] [INF] [] [0HNCSVGVFMCRF:00000001] [/api/v1/mpesa/registration/urls] [Executing endpoint 'DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI)'] []
+[2025-05-27 12:16:05.107 +03:00] [INF] [] [0HNCSVGVFMCRF:00000001] [/api/v1/mpesa/registration/urls] [Route matched with {action = "RegisterUrls", controller = "MpesaRegistration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUrls() on controller DarajaAPI.Controllers.v1.MpesaRegistrationController (DarajaAPI).] []
+[2025-05-27 12:17:09.151 +03:00] [INF] [] [] [] [Starting role seeding] []
+[2025-05-27 12:17:16.910 +03:00] [ERR] [] [] [] [An error occurred using the connection to database 'DarajaDB' on server 'localhost'.] []
+[2025-05-27 12:17:17.010 +03:00] [INF] [] [] [] [A transient exception occurred during execution. The operation will be retried after 0ms.
+MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)] [MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+]
+[2025-05-27 12:17:21.119 +03:00] [ERR] [] [] [] [An error occurred using the connection to database 'DarajaDB' on server 'localhost'.] []
+[2025-05-27 12:17:21.143 +03:00] [ERR] [] [] [] [An exception occurred while iterating over the results of a query for context type 'Daraja.DbContext.DarajaDbContext'.
+Microsoft.EntityFrameworkCore.Storage.RetryLimitExceededException: The maximum number of retries (1) was exceeded while executing database operations with 'MySqlRetryingExecutionStrategy'. See the inner exception for the most recent failure.
+ ---> MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()] [Microsoft.EntityFrameworkCore.Storage.RetryLimitExceededException: The maximum number of retries (1) was exceeded while executing database operations with 'MySqlRetryingExecutionStrategy'. See the inner exception for the most recent failure.
+ ---> MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+]
+[2025-05-27 12:17:21.790 +03:00] [INF] [] [] [] [Role seeding completed] []
+[2025-05-27 12:17:21.792 +03:00] [INF] [] [] [] [Starting super admin seeding] []
+[2025-05-27 12:17:25.913 +03:00] [ERR] [] [] [] [An error occurred using the connection to database 'DarajaDB' on server 'localhost'.] []
+[2025-05-27 12:17:25.922 +03:00] [INF] [] [] [] [A transient exception occurred during execution. The operation will be retried after 0ms.
+MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 381
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)] [MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 381
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+]
+[2025-05-27 12:17:30.050 +03:00] [ERR] [] [] [] [An error occurred using the connection to database 'DarajaDB' on server 'localhost'.] []
+[2025-05-27 12:17:30.056 +03:00] [ERR] [] [] [] [An exception occurred while iterating over the results of a query for context type 'Daraja.DbContext.DarajaDbContext'.
+Microsoft.EntityFrameworkCore.Storage.RetryLimitExceededException: The maximum number of retries (1) was exceeded while executing database operations with 'MySqlRetryingExecutionStrategy'. See the inner exception for the most recent failure.
+ ---> MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 381
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()] [Microsoft.EntityFrameworkCore.Storage.RetryLimitExceededException: The maximum number of retries (1) was exceeded while executing database operations with 'MySqlRetryingExecutionStrategy'. See the inner exception for the most recent failure.
+ ---> MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 381
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+]
+[2025-05-27 12:17:30.378 +03:00] [INF] [] [] [] [Super admin seeding completed] []
+[2025-05-27 12:17:30.896 +03:00] [WRN] [] [] [] [The WebRootPath was not found: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI\wwwroot. Static files may be unavailable.] []
+[2025-05-27 12:17:31.188 +03:00] [INF] [] [] [] [Now listening on: https://localhost:5003] []
+[2025-05-27 12:17:31.447 +03:00] [INF] [] [] [] [Application started. Press Ctrl+C to shut down.] []
+[2025-05-27 12:17:31.451 +03:00] [INF] [] [] [] [Hosting environment: Development] []
+[2025-05-27 12:17:31.454 +03:00] [INF] [] [] [] [Content root path: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI] []
+[2025-05-27 12:17:32.680 +03:00] [INF] [] [0HNCSVT7FJIS7:00000001] [/swagger/index.html] [Request starting HTTP/2 GET https://localhost:5003/swagger/index.html - null null] []
+[2025-05-27 12:17:33.486 +03:00] [INF] [] [0HNCSVT7FJIS7:00000001] [/swagger/index.html] [Request finished HTTP/2 GET https://localhost:5003/swagger/index.html - 200 null text/html;charset=utf-8 826.3646ms] []
+[2025-05-27 12:17:33.517 +03:00] [INF] [] [0HNCSVT7FJIS7:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request starting HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - null null] []
+[2025-05-27 12:17:33.523 +03:00] [INF] [] [0HNCSVT7FJIS7:00000005] [/_vs/browserLink] [Request starting HTTP/2 GET https://localhost:5003/_vs/browserLink - null null] []
+[2025-05-27 12:17:33.631 +03:00] [INF] [] [0HNCSVT7FJIS7:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request finished HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 113.5321ms] []
+[2025-05-27 12:17:33.859 +03:00] [INF] [] [0HNCSVT7FJIS7:00000005] [/_vs/browserLink] [Request finished HTTP/2 GET https://localhost:5003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 336.0547ms] []
+[2025-05-27 12:17:33.985 +03:00] [INF] [] [0HNCSVT7FJIS7:00000007] [/swagger/v1/swagger.json] [Request starting HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - null null] []
+[2025-05-27 12:17:34.047 +03:00] [INF] [] [0HNCSVT7FJIS7:00000007] [/swagger/v1/swagger.json] [Request finished HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.4405ms] []
+[2025-05-27 12:17:35.015 +03:00] [ERR] [] [] [] [An error occurred using the connection to database 'DarajaDB' on server 'localhost'.] []
+[2025-05-27 12:17:35.031 +03:00] [INF] [] [] [] [A transient exception occurred during execution. The operation will be retried after 0ms.
+MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)] [MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+]
+[2025-05-27 12:17:39.399 +03:00] [ERR] [] [] [] [An error occurred using the connection to database 'DarajaDB' on server 'localhost'.] []
+[2025-05-27 12:17:39.414 +03:00] [ERR] [] [] [] [An exception occurred while iterating over the results of a query for context type 'Daraja.DbContext.DarajaDbContext'.
+Microsoft.EntityFrameworkCore.Storage.RetryLimitExceededException: The maximum number of retries (1) was exceeded while executing database operations with 'MySqlRetryingExecutionStrategy'. See the inner exception for the most recent failure.
+ ---> MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()] [Microsoft.EntityFrameworkCore.Storage.RetryLimitExceededException: The maximum number of retries (1) was exceeded while executing database operations with 'MySqlRetryingExecutionStrategy'. See the inner exception for the most recent failure.
+ ---> MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+]
+[2025-05-27 12:17:39.918 +03:00] [ERR] [] [] [] [Payment reconciliation failed] [Microsoft.EntityFrameworkCore.Storage.RetryLimitExceededException: The maximum number of retries (1) was exceeded while executing database operations with 'MySqlRetryingExecutionStrategy'. See the inner exception for the most recent failure.
+ ---> MySqlConnector.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.OpenTcpSocketAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1063
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 425
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at DarajaAPI.Repositories.MpesaTransactionRepository.GetUnverifiedTransactionsAsync() in C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI\Repositories\MpesaTransactionRepository.cs:line 19
+   at DarajaAPI.Services.Background.PaymentReconciliationService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI\Services\Background\PaymentReconciliationService.cs:line 30
+]
+[2025-05-27 12:17:51.931 +03:00] [INF] [] [0HNCSVT7FJIS8:00000001] [/swagger/index.html] [Request starting HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/swagger/index.html - null null] []
+[2025-05-27 12:17:51.964 +03:00] [INF] [] [0HNCSVT7FJIS8:00000001] [/swagger/index.html] [Request finished HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/swagger/index.html - 200 null text/html;charset=utf-8 32.5356ms] []
+[2025-05-27 12:17:52.266 +03:00] [INF] [] [0HNCSVT7FJIS8:00000002] [/_framework/aspnetcore-browser-refresh.js] [Request starting HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/_framework/aspnetcore-browser-refresh.js - null null] []
+[2025-05-27 12:17:52.278 +03:00] [INF] [] [0HNCSVT7FJIS8:00000002] [/_framework/aspnetcore-browser-refresh.js] [Request finished HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 11.9865ms] []
+[2025-05-27 12:17:52.334 +03:00] [INF] [] [0HNCSVT7FJIS9:00000001] [/_vs/browserLink] [Request starting HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/_vs/browserLink - null null] []
+[2025-05-27 12:17:52.380 +03:00] [INF] [] [0HNCSVT7FJIS9:00000001] [/_vs/browserLink] [Request finished HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.771ms] []
+[2025-05-27 12:17:53.813 +03:00] [INF] [] [0HNCSVT7FJIS9:00000002] [/swagger/v1/swagger.json] [Request starting HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/swagger/v1/swagger.json - null null] []
+[2025-05-27 12:17:53.838 +03:00] [INF] [] [0HNCSVT7FJIS9:00000002] [/swagger/v1/swagger.json] [Request finished HTTP/1.1 GET https://69a8-197-232-41-24.ngrok-free.app/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.1914ms] []
+[2025-05-27 12:19:41.256 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Request starting HTTP/1.1 POST https://69a8-197-232-41-24.ngrok-free.app/api/v1/mpesa/registration/urls - null 0] []
+[2025-05-27 12:19:41.440 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [CORS policy execution successful.] []
+[2025-05-27 12:19:41.479 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Executing endpoint 'DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI)'] []
+[2025-05-27 12:19:41.520 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Route matched with {action = "RegisterUrls", controller = "MpesaRegistration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUrls() on controller DarajaAPI.Controllers.v1.MpesaRegistrationController (DarajaAPI).] []
+[2025-05-27 12:19:46.046 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Start processing HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-27 12:19:46.056 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Sending HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-27 12:19:46.958 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Received HTTP response headers after 888.8858ms - 200] []
+[2025-05-27 12:19:46.963 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [End processing HTTP request after 920.4626ms - 200] []
+[2025-05-27 12:19:47.479 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Start processing HTTP request POST https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl] []
+[2025-05-27 12:19:47.488 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Sending HTTP request POST https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl] []
+[2025-05-27 12:19:47.908 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Received HTTP response headers after 415.792ms - 400] []
+[2025-05-27 12:19:47.913 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [End processing HTTP request after 434.0027ms - 400] []
+[2025-05-27 12:19:47.933 +03:00] [ERR] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [URL registration failed: {
+                    "requestId":"17f6-47b3-b4fd-ae0574a0242c452367",
+                    "errorCode": "400.003.02",
+                    "errorMessage": "Bad Request - Invalid ResponseType"
+                }
+            ] []
+[2025-05-27 12:19:47.971 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Executing OkObjectResult, writing value of type 'DarajaAPI.Models.Dto.DarajaResponseDto'.] []
+[2025-05-27 12:19:48.014 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Executed action DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI) in 6470.8366ms] []
+[2025-05-27 12:19:48.060 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Executed endpoint 'DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI)'] []
+[2025-05-27 12:19:48.075 +03:00] [INF] [] [0HNCSVT7FJISA:00000001] [/api/v1/mpesa/registration/urls] [Request finished HTTP/1.1 POST https://69a8-197-232-41-24.ngrok-free.app/api/v1/mpesa/registration/urls - 200 null application/json; charset=utf-8 6818.729ms] []

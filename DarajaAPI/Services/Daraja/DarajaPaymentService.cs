@@ -55,10 +55,7 @@ namespace DarajaAPI.Services.Daraja
 
             try
             {
-                var response = await client.PostAsJsonAsync(
-                    "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest",
-                    requestBody
-                );
+                var response = await client.PostAsJsonAsync("https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest", requestBody);
 
                 _logger.LogInformation("Payment processed: {Phone}, {Amount}", phoneNumber, amount);
                 return await response.Content.ReadAsStringAsync();
@@ -78,7 +75,7 @@ namespace DarajaAPI.Services.Daraja
 
             var requestBody = new
             {
-                ShortCode = _settings.ShortCode,
+                ShortCode = _config.Credentials.ShortCode,
                 CommandID = "CustomerPayBillOnline",
                 Amount = request.Amount,
                 Msisdn = request.PhoneNumber,
