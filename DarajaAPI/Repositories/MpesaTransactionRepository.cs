@@ -36,5 +36,11 @@ namespace DarajaAPI.Repositories
             return await _context.MpesaC2Bs
                 .AnyAsync(t => t.TransID == transactionId);
         }
+
+        public async Task<MpesaC2B> GetByTransactionIdAsync(string transactionId)
+        {
+            return await _context.MpesaC2Bs
+                .FirstOrDefaultAsync(t => t.TransID == transactionId);
+        }
     }
 }

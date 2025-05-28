@@ -33,7 +33,9 @@ namespace DarajaAPI.Services.Daraja
             {
                 ValidationURL = _config.Urls.Validation,
                 ConfirmationURL = _config.Urls.Confirmation,
-                ResponseType = "Completed",
+                ResponseType = _config.Environment.Equals("Sandbox", StringComparison.OrdinalIgnoreCase)
+                                ? "Completed"   // Sandbox requires capitalized
+                                : "completed",  // Production requires lowercase
                 ShortCode = _config.Credentials.ShortCode
             };
 

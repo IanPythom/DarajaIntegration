@@ -6,7 +6,7 @@ namespace DarajaAPI.Helpers
     {
         public static (bool IsValid, string Error) ValidateAccountNumber(string accountNumber)
         {
-            const string prefix = "174379"; // Changed from 2173219
+            const string prefix = "600979"; // Changed from 2173219
             const int requiredLength = 20;  // 6 (prefix) + 14 (timestamp) e.g 17437920231015124530" (20 characters)
 
             if (!accountNumber.StartsWith(prefix))

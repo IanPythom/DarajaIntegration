@@ -44,9 +44,14 @@ builder.Services.AddCors(options =>
 });
 
 // Add this in Program.cs after builder.Services.AddHttpClient();
+var env = builder.Configuration["Daraja:Environment"];
+var baseUrl = env.Equals("Production", StringComparison.OrdinalIgnoreCase)
+    ? builder.Configuration["Daraja:BaseUrls:Production"]
+    : builder.Configuration["Daraja:BaseUrls:Sandbox"];
+
 builder.Services.AddHttpClient("mpesa", client =>
 {
-    client.BaseAddress = new Uri(builder.Configuration["Daraja:MpesaBaseUrl"]);
+    client.BaseAddress = new Uri(baseUrl);
 });
 
 // Bind DarajaConfig to the "Daraja" section of appsettings.json

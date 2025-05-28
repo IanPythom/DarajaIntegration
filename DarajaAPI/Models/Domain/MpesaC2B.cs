@@ -37,6 +37,8 @@ namespace DarajaAPI.Models.Domain
 
         [JsonProperty("MSISDN")]
         public string MSISDN { get; set; }
+        public string? Status { get; set; } // Transaction status (e.g., "Completed", "Failed")
+        public DateTime? LastUpdated { get; set; } // Last update timestamp
 
         // Optional fields (may not be present in all callbacks)
         public string? FirstName { get; set; }

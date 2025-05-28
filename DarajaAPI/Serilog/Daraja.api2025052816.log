@@ -1,0 +1,46 @@
+[2025-05-28 16:09:12.307 +03:00] [INF] [] [] [] [Starting role seeding] []
+[2025-05-28 16:09:17.014 +03:00] [INF] [] [] [] [Executed DbCommand (137ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-28 16:09:17.413 +03:00] [INF] [] [] [] [Executed DbCommand (36ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-28 16:09:17.438 +03:00] [INF] [] [] [] [Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-28 16:09:17.457 +03:00] [INF] [] [] [] [Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-28 16:09:17.466 +03:00] [INF] [] [] [] [Role seeding completed] []
+[2025-05-28 16:09:17.469 +03:00] [INF] [] [] [] [Starting super admin seeding] []
+[2025-05-28 16:09:17.539 +03:00] [INF] [] [] [] [Executed DbCommand (5ms) [Parameters=[@__defaultUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT NOT EXISTS (
+    SELECT 1
+    FROM `User` AS `u`
+    WHERE (`u`.`Email` = @__defaultUser_Email_0) AND `u`.`Email` IS NOT NULL)] []
+[2025-05-28 16:09:17.554 +03:00] [INF] [] [] [] [Super admin seeding completed] []
+[2025-05-28 16:09:17.873 +03:00] [INF] [] [] [] [Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`BillRefNumber`, `m`.`BusinessShortCode`, `m`.`CreatedAt`, `m`.`FirstName`, `m`.`InvoiceNumber`, `m`.`IsVerified`, `m`.`LastName`, `m`.`LastUpdated`, `m`.`MSISDN`, `m`.`MiddleName`, `m`.`OrgAccountBalance`, `m`.`RetryCount`, `m`.`Status`, `m`.`ThirdPartyTransID`, `m`.`TransAmount`, `m`.`TransID`, `m`.`TransTime`, `m`.`TransactionType`, `m`.`VerificationDate`, `m`.`VerificationResult`
+FROM `MpesaC2Bs` AS `m`
+WHERE NOT (`m`.`IsVerified`) AND (`m`.`CreatedAt` > DATE_ADD(UTC_TIMESTAMP(), INTERVAL CAST(-7.0 AS signed) day))] []
+[2025-05-28 16:09:18.084 +03:00] [WRN] [] [] [] [The WebRootPath was not found: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI\wwwroot. Static files may be unavailable.] []
+[2025-05-28 16:09:18.237 +03:00] [INF] [] [] [] [Now listening on: https://localhost:5003] []
+[2025-05-28 16:09:18.501 +03:00] [INF] [] [] [] [Application started. Press Ctrl+C to shut down.] []
+[2025-05-28 16:09:18.504 +03:00] [INF] [] [] [] [Hosting environment: Development] []
+[2025-05-28 16:09:18.506 +03:00] [INF] [] [] [] [Content root path: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI] []
+[2025-05-28 16:09:19.911 +03:00] [INF] [] [0HNCTT3DBAGMO:00000001] [/swagger/index.html] [Request starting HTTP/2 GET https://localhost:5003/swagger/index.html - null null] []
+[2025-05-28 16:09:20.661 +03:00] [INF] [] [0HNCTT3DBAGMO:00000001] [/swagger/index.html] [Request finished HTTP/2 GET https://localhost:5003/swagger/index.html - 200 null text/html;charset=utf-8 773.479ms] []
+[2025-05-28 16:09:20.682 +03:00] [INF] [] [0HNCTT3DBAGMO:00000005] [/_vs/browserLink] [Request starting HTTP/2 GET https://localhost:5003/_vs/browserLink - null null] []
+[2025-05-28 16:09:20.682 +03:00] [INF] [] [0HNCTT3DBAGMO:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request starting HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - null null] []
+[2025-05-28 16:09:20.792 +03:00] [INF] [] [0HNCTT3DBAGMO:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request finished HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 110.4558ms] []
+[2025-05-28 16:09:21.841 +03:00] [INF] [] [0HNCTT3DBAGMO:00000005] [/_vs/browserLink] [Request finished HTTP/2 GET https://localhost:5003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1159.7196ms] []
+[2025-05-28 16:09:21.996 +03:00] [INF] [] [0HNCTT3DBAGMO:00000007] [/swagger/v1/swagger.json] [Request starting HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - null null] []
+[2025-05-28 16:09:22.270 +03:00] [INF] [] [0HNCTT3DBAGMO:00000007] [/swagger/v1/swagger.json] [Request finished HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 273.7202ms] []

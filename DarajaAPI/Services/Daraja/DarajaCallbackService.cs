@@ -82,5 +82,35 @@ namespace DarajaAPI.Services.Daraja
 
             return ValidationResult.Valid;
         }
+
+        public async Task HandleTransactionStatusAsync(TransactionStatusCallbackDto callback)
+        {
+            try
+            {
+                var transactionId = callback.Result.TransactionID;
+                var status = callback.Result.ResultCode == 0 ? "Completed" : "Failed";
+
+                _logger.LogInformation($"Transaction status update: {transactionId} - {status}");
+
+                // Find and update transaction in database
+                var transaction = await _context.MpesaC2Bs
+                    .FirstOrDefaultAsync(t => t.TransID == transactionId);
+
+                if (transaction != null)
+                {
+                    transaction.Status = status;
+                    transaction.LastUpdated = DateTime.UtcNow;
+                    await _context.SaveChangesAsync();
+                }
+                else
+                {
+                    _logger.LogWarning($"Transaction not found: {transactionId}");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error processing transaction status");
+            }
+        }
     }
 }

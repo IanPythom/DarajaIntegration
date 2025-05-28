@@ -179,7 +179,7 @@
         }
       }
     },
-    "/api/v1/mpesa/callback/confirmation": {
+    "/api/v1/mpesa/confirmation": {
       "post": {
         "tags": [
           "MpesaCallback"
@@ -210,7 +210,7 @@
         }
       }
     },
-    "/api/v1/mpesa/callback/validation": {
+    "/api/v1/mpesa/validation": {
       "post": {
         "tags": [
           "MpesaCallback"
@@ -230,6 +230,37 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/MpesaValidationRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/mpesa/transaction-status": {
+      "post": {
+        "tags": [
+          "MpesaCallback"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionStatusCallbackDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionStatusCallbackDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionStatusCallbackDto"
               }
             }
           }
@@ -496,6 +527,15 @@
             "type": "string",
             "nullable": true
           },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastUpdated": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
           "firstName": {
             "type": "string",
             "nullable": true
@@ -657,6 +697,75 @@
             "items": {
               "type": "string"
             }
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResultParameter": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResultParameters": {
+        "type": "object",
+        "properties": {
+          "resultParameter": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ResultParameter"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransactionResult": {
+        "type": "object",
+        "properties": {
+          "resultType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "resultCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "resultDesc": {
+            "type": "string",
+            "nullable": true
+          },
+          "originatorConversationID": {
+            "type": "string",
+            "nullable": true
+          },
+          "conversationID": {
+            "type": "string",
+            "nullable": true
+          },
+          "transactionID": {
+            "type": "string",
+            "nullable": true
+          },
+          "resultParameters": {
+            "$ref": "#/components/schemas/ResultParameters"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransactionStatusCallbackDto": {
+        "type": "object",
+        "properties": {
+          "result": {
+            "$ref": "#/components/schemas/TransactionResult"
           }
         },
         "additionalProperties": false

@@ -96,7 +96,7 @@
   {
     "ContainingType": "DarajaAPI.Controllers.v1.MpesaCallbackController",
     "Method": "Confirmation",
-    "RelativePath": "api/v1/mpesa/callback/confirmation",
+    "RelativePath": "api/v1/mpesa/confirmation",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -104,22 +104,6 @@
       {
         "Name": "transaction",
         "Type": "DarajaAPI.Models.Domain.MpesaC2B",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "DarajaAPI.Controllers.v1.MpesaCallbackController",
-    "Method": "Validation",
-    "RelativePath": "api/v1/mpesa/callback/validation",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "DarajaAPI.Models.Dto.MpesaValidationRequestDto",
         "IsRequired": true
       }
     ],
@@ -185,5 +169,37 @@
         "StatusCode": 400
       }
     ]
+  },
+  {
+    "ContainingType": "DarajaAPI.Controllers.v1.MpesaCallbackController",
+    "Method": "TransactionStatus",
+    "RelativePath": "api/v1/mpesa/transaction-status",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DarajaAPI.Models.Dto.TransactionStatusCallbackDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DarajaAPI.Controllers.v1.MpesaCallbackController",
+    "Method": "Validation",
+    "RelativePath": "api/v1/mpesa/validation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DarajaAPI.Models.Dto.MpesaValidationRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

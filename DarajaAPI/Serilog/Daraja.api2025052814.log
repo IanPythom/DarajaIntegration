@@ -1,0 +1,80 @@
+[2025-05-28 14:41:29.779 +03:00] [INF] [] [] [] [Starting role seeding] []
+[2025-05-28 14:41:33.077 +03:00] [INF] [] [] [] [Executed DbCommand (146ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-28 14:41:33.391 +03:00] [INF] [] [] [] [Executed DbCommand (25ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-28 14:41:33.406 +03:00] [INF] [] [] [] [Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-28 14:41:33.418 +03:00] [INF] [] [] [] [Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Role` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1] []
+[2025-05-28 14:41:33.424 +03:00] [INF] [] [] [] [Role seeding completed] []
+[2025-05-28 14:41:33.426 +03:00] [INF] [] [] [] [Starting super admin seeding] []
+[2025-05-28 14:41:33.484 +03:00] [INF] [] [] [] [Executed DbCommand (4ms) [Parameters=[@__defaultUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT NOT EXISTS (
+    SELECT 1
+    FROM `User` AS `u`
+    WHERE (`u`.`Email` = @__defaultUser_Email_0) AND `u`.`Email` IS NOT NULL)] []
+[2025-05-28 14:41:33.494 +03:00] [INF] [] [] [] [Super admin seeding completed] []
+[2025-05-28 14:41:33.740 +03:00] [INF] [] [] [] [Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`BillRefNumber`, `m`.`BusinessShortCode`, `m`.`CreatedAt`, `m`.`FirstName`, `m`.`InvoiceNumber`, `m`.`IsVerified`, `m`.`LastName`, `m`.`MSISDN`, `m`.`MiddleName`, `m`.`OrgAccountBalance`, `m`.`RetryCount`, `m`.`ThirdPartyTransID`, `m`.`TransAmount`, `m`.`TransID`, `m`.`TransTime`, `m`.`TransactionType`, `m`.`VerificationDate`, `m`.`VerificationResult`
+FROM `MpesaC2Bs` AS `m`
+WHERE NOT (`m`.`IsVerified`) AND (`m`.`CreatedAt` > DATE_ADD(UTC_TIMESTAMP(), INTERVAL CAST(-7.0 AS signed) day))] []
+[2025-05-28 14:41:33.937 +03:00] [WRN] [] [] [] [The WebRootPath was not found: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI\wwwroot. Static files may be unavailable.] []
+[2025-05-28 14:41:34.072 +03:00] [INF] [] [] [] [Now listening on: https://localhost:5003] []
+[2025-05-28 14:41:34.285 +03:00] [INF] [] [] [] [Application started. Press Ctrl+C to shut down.] []
+[2025-05-28 14:41:34.287 +03:00] [INF] [] [] [] [Hosting environment: Development] []
+[2025-05-28 14:41:34.290 +03:00] [INF] [] [] [] [Content root path: C:\Users\ianga\source\repos\DarajaIntegration\DarajaAPI] []
+[2025-05-28 14:41:35.732 +03:00] [INF] [] [0HNCTRICG9FAB:00000001] [/swagger/index.html] [Request starting HTTP/2 GET https://localhost:5003/swagger/index.html - null null] []
+[2025-05-28 14:41:36.384 +03:00] [INF] [] [0HNCTRICG9FAB:00000001] [/swagger/index.html] [Request finished HTTP/2 GET https://localhost:5003/swagger/index.html - 200 null text/html;charset=utf-8 668.1289ms] []
+[2025-05-28 14:41:36.402 +03:00] [INF] [] [0HNCTRICG9FAB:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request starting HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - null null] []
+[2025-05-28 14:41:36.402 +03:00] [INF] [] [0HNCTRICG9FAB:00000005] [/_vs/browserLink] [Request starting HTTP/2 GET https://localhost:5003/_vs/browserLink - null null] []
+[2025-05-28 14:41:36.436 +03:00] [INF] [] [0HNCTRICG9FAB:00000003] [/_framework/aspnetcore-browser-refresh.js] [Request finished HTTP/2 GET https://localhost:5003/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 34.2228ms] []
+[2025-05-28 14:41:36.563 +03:00] [INF] [] [0HNCTRICG9FAB:00000005] [/_vs/browserLink] [Request finished HTTP/2 GET https://localhost:5003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 160.7454ms] []
+[2025-05-28 14:41:36.678 +03:00] [INF] [] [0HNCTRICG9FAB:00000007] [/swagger/v1/swagger.json] [Request starting HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - null null] []
+[2025-05-28 14:41:36.855 +03:00] [INF] [] [0HNCTRICG9FAB:00000007] [/swagger/v1/swagger.json] [Request finished HTTP/2 GET https://localhost:5003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 181.1037ms] []
+[2025-05-28 14:42:04.086 +03:00] [INF] [] [0HNCTRICG9FAC:00000001] [/swagger/index.html] [Request starting HTTP/1.1 GET https://c3ac-197-232-41-24.ngrok-free.app/swagger/index.html - null null] []
+[2025-05-28 14:42:04.121 +03:00] [INF] [] [0HNCTRICG9FAC:00000001] [/swagger/index.html] [Request finished HTTP/1.1 GET https://c3ac-197-232-41-24.ngrok-free.app/swagger/index.html - 200 null text/html;charset=utf-8 35.2614ms] []
+[2025-05-28 14:42:04.667 +03:00] [INF] [] [0HNCTRICG9FAC:00000002] [/_framework/aspnetcore-browser-refresh.js] [Request starting HTTP/1.1 GET https://c3ac-197-232-41-24.ngrok-free.app/_framework/aspnetcore-browser-refresh.js - null null] []
+[2025-05-28 14:42:04.676 +03:00] [INF] [] [0HNCTRICG9FAC:00000002] [/_framework/aspnetcore-browser-refresh.js] [Request finished HTTP/1.1 GET https://c3ac-197-232-41-24.ngrok-free.app/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 9.2052ms] []
+[2025-05-28 14:42:04.834 +03:00] [INF] [] [0HNCTRICG9FAD:00000001] [/_vs/browserLink] [Request starting HTTP/1.1 GET https://c3ac-197-232-41-24.ngrok-free.app/_vs/browserLink - null null] []
+[2025-05-28 14:42:04.862 +03:00] [INF] [] [0HNCTRICG9FAD:00000001] [/_vs/browserLink] [Request finished HTTP/1.1 GET https://c3ac-197-232-41-24.ngrok-free.app/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28ms] []
+[2025-05-28 14:42:06.121 +03:00] [INF] [] [0HNCTRICG9FAD:00000002] [/swagger/v1/swagger.json] [Request starting HTTP/1.1 GET https://c3ac-197-232-41-24.ngrok-free.app/swagger/v1/swagger.json - null null] []
+[2025-05-28 14:42:06.153 +03:00] [INF] [] [0HNCTRICG9FAD:00000002] [/swagger/v1/swagger.json] [Request finished HTTP/1.1 GET https://c3ac-197-232-41-24.ngrok-free.app/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.1108ms] []
+[2025-05-28 14:42:14.733 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Request starting HTTP/1.1 POST https://c3ac-197-232-41-24.ngrok-free.app/api/v1/mpesa/registration/urls - null 0] []
+[2025-05-28 14:42:14.817 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [CORS policy execution successful.] []
+[2025-05-28 14:42:14.844 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Executing endpoint 'DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI)'] []
+[2025-05-28 14:42:14.867 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Route matched with {action = "RegisterUrls", controller = "MpesaRegistration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUrls() on controller DarajaAPI.Controllers.v1.MpesaRegistrationController (DarajaAPI).] []
+[2025-05-28 14:42:25.847 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Start processing HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-28 14:42:25.853 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Sending HTTP request GET https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials] []
+[2025-05-28 14:42:26.557 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Received HTTP response headers after 693.6433ms - 200] []
+[2025-05-28 14:42:26.562 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [End processing HTTP request after 718.7027ms - 200] []
+[2025-05-28 14:42:26.729 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Start processing HTTP request POST https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl] []
+[2025-05-28 14:42:26.731 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Sending HTTP request POST https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl] []
+[2025-05-28 14:42:27.135 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Received HTTP response headers after 402.2921ms - 400] []
+[2025-05-28 14:42:27.139 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [End processing HTTP request after 410.8001ms - 400] []
+[2025-05-28 14:42:27.151 +03:00] [ERR] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [URL registration failed: {
+                    "requestId":"17f6-47b3-b4fd-ae0574a0242c508646",
+                    "errorCode": "400.003.02",
+                    "errorMessage": "Bad Request - Invalid ResponseType"
+                }
+            ] []
+[2025-05-28 14:42:27.166 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Executing OkObjectResult, writing value of type 'DarajaAPI.Models.Dto.DarajaResponseDto'.] []
+[2025-05-28 14:42:27.184 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Executed action DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI) in 12308.4138ms] []
+[2025-05-28 14:42:27.188 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Executed endpoint 'DarajaAPI.Controllers.v1.MpesaRegistrationController.RegisterUrls (DarajaAPI)'] []
+[2025-05-28 14:42:27.191 +03:00] [INF] [] [0HNCTRICG9FAD:00000003] [/api/v1/mpesa/registration/urls] [Request finished HTTP/1.1 POST https://c3ac-197-232-41-24.ngrok-free.app/api/v1/mpesa/registration/urls - 200 null application/json; charset=utf-8 12458.0186ms] []
+[2025-05-28 14:56:33.885 +03:00] [INF] [] [] [] [Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`BillRefNumber`, `m`.`BusinessShortCode`, `m`.`CreatedAt`, `m`.`FirstName`, `m`.`InvoiceNumber`, `m`.`IsVerified`, `m`.`LastName`, `m`.`MSISDN`, `m`.`MiddleName`, `m`.`OrgAccountBalance`, `m`.`RetryCount`, `m`.`ThirdPartyTransID`, `m`.`TransAmount`, `m`.`TransID`, `m`.`TransTime`, `m`.`TransactionType`, `m`.`VerificationDate`, `m`.`VerificationResult`
+FROM `MpesaC2Bs` AS `m`
+WHERE NOT (`m`.`IsVerified`) AND (`m`.`CreatedAt` > DATE_ADD(UTC_TIMESTAMP(), INTERVAL CAST(-7.0 AS signed) day))] []

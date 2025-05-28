@@ -3,6 +3,7 @@ using System;
 using Daraja.DbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DarajaAPI.Migrations
 {
     [DbContext(typeof(DarajaDbContext))]
-    partial class DarajaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250528125502_AddStatusAndLastUpdatedToMpesaC2B")]
+    partial class AddStatusAndLastUpdatedToMpesaC2B
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -8,5 +8,6 @@ namespace DarajaAPI.Services.Daraja
     {
         Task<TransactionResult> HandleConfirmationAsync(MpesaC2B transaction);
         Task<ValidationResult> HandleValidationAsync(MpesaValidationRequestDto request);
+        Task HandleTransactionStatusAsync(TransactionStatusCallbackDto callback);
     }
 }

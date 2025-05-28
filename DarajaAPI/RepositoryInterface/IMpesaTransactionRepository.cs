@@ -8,5 +8,6 @@ namespace DarajaAPI.RepositoryInterface
         Task UpdateAsync(MpesaC2B transaction);
         Task CommitAsync();
         Task<bool> TransactionExistsAsync(string transactionId);
+        Task<MpesaC2B> GetByTransactionIdAsync(string transactionId);
     }
 }

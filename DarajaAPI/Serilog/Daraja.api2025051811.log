@@ -1,4 +1,0 @@
-[2025-05-18 11:56:36.816 +03:00] [INF] [] [] [] [Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT `m`.`Id`, `m`.`BillRefNumber`, `m`.`BusinessShortCode`, `m`.`CreatedAt`, `m`.`FirstName`, `m`.`InvoiceNumber`, `m`.`IsVerified`, `m`.`LastName`, `m`.`MSISDN`, `m`.`MiddleName`, `m`.`OrgAccountBalance`, `m`.`RetryCount`, `m`.`ThirdPartyTransID`, `m`.`TransAmount`, `m`.`TransID`, `m`.`TransTime`, `m`.`TransactionType`, `m`.`VerificationDate`, `m`.`VerificationResult`
-FROM `MpesaC2Bs` AS `m`
-WHERE NOT (`m`.`IsVerified`) AND (`m`.`CreatedAt` > DATE_ADD(UTC_TIMESTAMP(), INTERVAL CAST(-7.0 AS signed) day))] []

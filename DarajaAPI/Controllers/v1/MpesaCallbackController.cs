@@ -10,7 +10,7 @@ namespace DarajaAPI.Controllers.v1
 {
     [ApiVersion("1.0")]
     [ApiController]
-    [Route("api/v{version:apiVersion}/mpesa/callback")]
+    [Route("api/v{version:apiVersion}/mpesa")]
     [ServiceFilter(typeof(MpesaIpWhitelistFilter))]
     public class MpesaCallbackController : ControllerBase
     {
@@ -76,6 +76,30 @@ namespace DarajaAPI.Controllers.v1
                 _ => Ok(new MpesaValidationResponseDto
                 { ResultCode = "C2B00099", ResultDesc = "Rejected" })
             };
+        }
+
+        [HttpPost]
+        [Route("transaction-status")]
+        /// <summary>
+        /// Handles transaction status callbacks from M-Pesa
+        /// </summary>
+        /// <remarks>
+        /// PRODUCTION ENDPOINT. 
+        /// Called by Safaricom with transaction status updates.
+        /// Updates transaction records in the database.
+        /// </remarks>
+        public async Task<IActionResult> TransactionStatus([FromBody] TransactionStatusCallbackDto request)
+        {
+            try
+            {
+                await _callbackService.HandleTransactionStatusAsync(request);
+                return Ok(new { ResultCode = 0, ResultDesc = "Success" });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Transaction status callback failed");
+                return Ok(new { ResultCode = 1, ResultDesc = "Error processing callback" });
+            }
         }
     }
 }
